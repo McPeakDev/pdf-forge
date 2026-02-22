@@ -213,26 +213,26 @@ import "C"
 
 ### Types
 
-| Type                   | Description                                                                         |
-| ---------------------- | ----------------------------------------------------------------------------------- |
-| `RpdfPageOrientation`  | Enum: `Portrait = 0` (default), `Landscape = 1`                                     |
-| `RpdfPipelineConfig`   | Struct: `title`, `page_width`, `page_height`, `page_margin`, `orientation`. Zero/NULL fields fall back to A4 defaults. |
+| Type                  | Description                                                                                                            |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| `RpdfPageOrientation` | Enum: `Portrait = 0` (default), `Landscape = 1`                                                                        |
+| `RpdfPipelineConfig`  | Struct: `title`, `page_width`, `page_height`, `page_margin`, `orientation`. Zero/NULL fields fall back to A4 defaults. |
 
 ### Functions
 
-| Function                             | Description                                                   |
-| ------------------------------------ | ------------------------------------------------------------- |
-| `rpdf_generate_pdf`                  | HTML → PDF bytes (default config)                             |
-| `rpdf_generate_pdf_ex`               | HTML → PDF bytes with custom `RpdfPipelineConfig`             |
-| `rpdf_generate_pdf_with_layout`      | HTML → PDF bytes + layout JSON (default config)               |
-| `rpdf_generate_pdf_with_layout_ex`   | HTML → PDF bytes + layout JSON with custom `RpdfPipelineConfig` |
-| `rpdf_compute_layout`                | HTML → layout JSON only (default config)                      |
-| `rpdf_compute_layout_ex`             | HTML → layout JSON only with custom `RpdfPipelineConfig`      |
-| `rpdf_render_from_layout`            | layout JSON → PDF bytes                                       |
-| `rpdf_free_buffer`                   | Free a PDF byte buffer                                        |
-| `rpdf_free_string`                   | Free a JSON string                                            |
-| `rpdf_last_error`                    | Last error message (thread-local, do **not** free)            |
-| `rpdf_version`                       | Library version string (do **not** free)                      |
+| Function                           | Description                                                     |
+| ---------------------------------- | --------------------------------------------------------------- |
+| `rpdf_generate_pdf`                | HTML → PDF bytes (default config)                               |
+| `rpdf_generate_pdf_ex`             | HTML → PDF bytes with custom `RpdfPipelineConfig`               |
+| `rpdf_generate_pdf_with_layout`    | HTML → PDF bytes + layout JSON (default config)                 |
+| `rpdf_generate_pdf_with_layout_ex` | HTML → PDF bytes + layout JSON with custom `RpdfPipelineConfig` |
+| `rpdf_compute_layout`              | HTML → layout JSON only (default config)                        |
+| `rpdf_compute_layout_ex`           | HTML → layout JSON only with custom `RpdfPipelineConfig`        |
+| `rpdf_render_from_layout`          | layout JSON → PDF bytes                                         |
+| `rpdf_free_buffer`                 | Free a PDF byte buffer                                          |
+| `rpdf_free_string`                 | Free a JSON string                                              |
+| `rpdf_last_error`                  | Last error message (thread-local, do **not** free)              |
+| `rpdf_version`                     | Library version string (do **not** free)                        |
 
 **Return codes:** `0` success · `1` null pointer · `2` invalid UTF-8 · `3` pipeline error · `4` render error
 

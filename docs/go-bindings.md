@@ -335,11 +335,11 @@ pdf := C.GoBytes(unsafe.Pointer(outBuf), C.int(outLen))
 
 ## 8. Memory ownership rules
 
-| Pointer                                                                      | Who allocates       | How to free                    |
-| ---------------------------------------------------------------------------- | ------------------- | ------------------------------ |
+| Pointer                                                                                                                                      | Who allocates       | How to free                    |
+| -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | ------------------------------ |
 | `*out_buf` from `rpdf_generate_pdf` / `rpdf_generate_pdf_ex` / `rpdf_render_from_layout`                                                     | Rust                | `C.rpdf_free_buffer(buf, len)` |
-| `*out_json_ptr` from `rpdf_compute_layout` / `rpdf_compute_layout_ex` / `rpdf_generate_pdf_with_layout` / `rpdf_generate_pdf_with_layout_ex`  | Rust                | `C.rpdf_free_string(ptr)`      |
-| `cfg.title` C string you allocate with `C.CString` for `*_ex` calls                                                                         | Go/C                | `C.free(unsafe.Pointer(ptr))`  |
-| `rpdf_last_error()` return value                                             | Rust (thread-local) | **do not free**                |
-| `rpdf_version()` return value                                                | Rust (static)       | **do not free**                |
-| `C.CString(...)` you allocate                                                | Go/C                | `C.free(unsafe.Pointer(ptr))`  |
+| `*out_json_ptr` from `rpdf_compute_layout` / `rpdf_compute_layout_ex` / `rpdf_generate_pdf_with_layout` / `rpdf_generate_pdf_with_layout_ex` | Rust                | `C.rpdf_free_string(ptr)`      |
+| `cfg.title` C string you allocate with `C.CString` for `*_ex` calls                                                                          | Go/C                | `C.free(unsafe.Pointer(ptr))`  |
+| `rpdf_last_error()` return value                                                                                                             | Rust (thread-local) | **do not free**                |
+| `rpdf_version()` return value                                                                                                                | Rust (static)       | **do not free**                |
+| `C.CString(...)` you allocate                                                                                                                | Go/C                | `C.free(unsafe.Pointer(ptr))`  |

@@ -36,7 +36,7 @@ use std::os::raw::{c_char, c_int};
 use std::ptr;
 use std::slice;
 
-use crate::pipeline::{generate_pdf, PipelineConfig, PageOrientation};
+use crate::pipeline::{generate_pdf, PageOrientation, PipelineConfig};
 
 thread_local! {
     static LAST_ERROR: RefCell<Option<CString>> = RefCell::new(None);
@@ -99,16 +99,34 @@ unsafe fn pipeline_config_from_c(cfg: &RpdfPipelineConfig) -> PipelineConfig {
             .to_string()
     };
 
-    let page_width = if cfg.page_width == 0.0 { defaults.page_width } else { cfg.page_width };
-    let page_height = if cfg.page_height == 0.0 { defaults.page_height } else { cfg.page_height };
-    let page_margin = if cfg.page_margin == 0.0 { defaults.page_margin } else { cfg.page_margin };
+    let page_width = if cfg.page_width == 0.0 {
+        defaults.page_width
+    } else {
+        cfg.page_width
+    };
+    let page_height = if cfg.page_height == 0.0 {
+        defaults.page_height
+    } else {
+        cfg.page_height
+    };
+    let page_margin = if cfg.page_margin == 0.0 {
+        defaults.page_margin
+    } else {
+        cfg.page_margin
+    };
 
     let orientation = match cfg.orientation {
         RpdfPageOrientation::Portrait => PageOrientation::Portrait,
         RpdfPageOrientation::Landscape => PageOrientation::Landscape,
     };
 
-    PipelineConfig { title, page_width, page_height, page_margin, orientation }
+    PipelineConfig {
+        title,
+        page_width,
+        page_height,
+        page_margin,
+        orientation,
+    }
 }
 
 // ---------------------------------------------------------------------------
@@ -188,7 +206,10 @@ pub unsafe extern "C" fn rpdf_generate_pdf_with_layout(
     out_pdf_len: *mut u32,
     out_json_ptr: *mut *mut c_char,
 ) -> c_int {
-    if html_ptr.is_null() || out_pdf_buf.is_null() || out_pdf_len.is_null() || out_json_ptr.is_null()
+    if html_ptr.is_null()
+        || out_pdf_buf.is_null()
+        || out_pdf_len.is_null()
+        || out_json_ptr.is_null()
     {
         set_last_error("Null pointer argument");
         return 1;
@@ -574,12 +595,7 @@ mod tests {
         let mut out_len: u32 = 0;
 
         let rc = unsafe {
-            rpdf_generate_pdf(
-                html.as_ptr(),
-                html.len() as u32,
-                &mut out_buf,
-                &mut out_len,
-            )
+            rpdf_generate_pdf(html.as_ptr(), html.len() as u32, &mut out_buf, &mut out_len)
         };
 
         assert_eq!(rc, 0, "Expected success");
@@ -599,9 +615,7 @@ mod tests {
         let html = b"<p>Layout test</p>";
         let mut json_ptr: *mut c_char = ptr::null_mut();
 
-        let rc = unsafe {
-            rpdf_compute_layout(html.as_ptr(), html.len() as u32, &mut json_ptr)
-        };
+        let rc = unsafe { rpdf_compute_layout(html.as_ptr(), html.len() as u32, &mut json_ptr) };
 
         assert_eq!(rc, 0);
         assert!(!json_ptr.is_null());
@@ -618,9 +632,7 @@ mod tests {
         let mut out_buf: *mut u8 = ptr::null_mut();
         let mut out_len: u32 = 0;
 
-        let rc = unsafe {
-            rpdf_generate_pdf(ptr::null(), 0, &mut out_buf, &mut out_len)
-        };
+        let rc = unsafe { rpdf_generate_pdf(ptr::null(), 0, &mut out_buf, &mut out_len) };
 
         assert_ne!(rc, 0, "Should fail on null input");
     }
@@ -663,8 +675,8 @@ mod tests {
         let title = CString::new("My Custom Title").unwrap();
         let cfg = RpdfPipelineConfig {
             title: title.as_ptr(),
-            page_width: 0.0,   // default
-            page_height: 0.0,  // default
+            page_width: 0.0,  // default
+            page_height: 0.0, // default
             page_margin: 20.0,
             orientation: RpdfPageOrientation::Landscape,
         };
@@ -704,19 +716,17 @@ mod tests {
         let mut json_ptr: *mut c_char = ptr::null_mut();
 
         let rc = unsafe {
-            rpdf_compute_layout_ex(
-                html.as_ptr(),
-                html.len() as u32,
-                &cfg,
-                &mut json_ptr,
-            )
+            rpdf_compute_layout_ex(html.as_ptr(), html.len() as u32, &cfg, &mut json_ptr)
         };
 
         assert_eq!(rc, 0);
         assert!(!json_ptr.is_null());
         let json = unsafe { CStr::from_ptr(json_ptr) }.to_str().unwrap();
         // In landscape the effective width = A4 height (841.89)
-        assert!(json.contains("841"), "Expected landscape width in JSON: {json}");
+        assert!(
+            json.contains("841"),
+            "Expected landscape width in JSON: {json}"
+        );
         unsafe { rpdf_free_string(json_ptr) };
     }
 }

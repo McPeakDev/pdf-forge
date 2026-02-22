@@ -4,6 +4,10 @@ version = "0.1.0"
 edition = "2021"
 description = "Template-driven HTML to PDF pipeline with cross-language bindings"
 license = "MIT"
+license-file = "LICENSE"
+repository = "https://github.com/McPeakDev/pdf-forge"
+homepage = "https://github.com/McPeakDev/pdf-forge"
+readme = "README.md"
 
 [lib]
 name = "pdf_forge"

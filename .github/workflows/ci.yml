@@ -1,0 +1,252 @@
+name: CI
+
+on:
+  push:
+    branches: ["**"]
+    tags: ["v*"]
+  pull_request:
+
+env:
+  CARGO_TERM_COLOR: always
+  RUST_BACKTRACE: 1
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Jobs
+# ─────────────────────────────────────────────────────────────────────────────
+jobs:
+  # ── 1. Test on every platform ─────────────────────────────────────────────
+  test:
+    name: Test · ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust toolchain (stable)
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache Cargo registry & build artefacts
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            target
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+          restore-keys: ${{ runner.os }}-cargo-
+
+      - name: Build (debug)
+        run: cargo build
+
+      - name: Run library tests
+        run: cargo test --lib
+
+  # ── 2. Cross-compile Linux aarch64 (no test runner needed) ───────────────
+  cross-linux-arm64:
+    name: Cross-compile · linux/arm64
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust toolchain + aarch64 target
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: aarch64-unknown-linux-gnu
+
+      - name: Install cross-compilation toolchain
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y gcc-aarch64-linux-gnu
+
+      - name: Cache Cargo
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            target
+          key: linux-arm64-cargo-${{ hashFiles('**/Cargo.lock') }}
+          restore-keys: linux-arm64-cargo-
+
+      - name: Build release (aarch64-unknown-linux-gnu)
+        env:
+          CARGO_TARGET_AARCH64_UNKNOWN_LINUX_GNU_LINKER: aarch64-linux-gnu-gcc
+        run: cargo build --release --target aarch64-unknown-linux-gnu
+
+  # ── 3. Build release artefacts & upload to GitHub Release (on v* tags) ───
+  release:
+    name: Release · ${{ matrix.target }}
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: [test]
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # ── Linux x86_64 ────────────────────────────────────────────────────
+          - os: ubuntu-latest
+            target: x86_64-unknown-linux-gnu
+            archive_name: pdf-forge-linux-x86_64
+            dylib: libpdf_forge.so
+            staticlib: libpdf_forge.a
+            binary: forge
+
+          # ── Linux aarch64 ───────────────────────────────────────────────────
+          - os: ubuntu-latest
+            target: aarch64-unknown-linux-gnu
+            archive_name: pdf-forge-linux-arm64
+            dylib: libpdf_forge.so
+            staticlib: libpdf_forge.a
+            binary: forge
+            linker: aarch64-linux-gnu-gcc
+            apt_pkg: gcc-aarch64-linux-gnu
+
+          # ── macOS x86_64 ────────────────────────────────────────────────────
+          - os: macos-latest
+            target: x86_64-apple-darwin
+            archive_name: pdf-forge-macos-x86_64
+            dylib: libpdf_forge.dylib
+            staticlib: libpdf_forge.a
+            binary: forge
+
+          # ── macOS arm64 (Apple Silicon) ─────────────────────────────────────
+          - os: macos-latest
+            target: aarch64-apple-darwin
+            archive_name: pdf-forge-macos-arm64
+            dylib: libpdf_forge.dylib
+            staticlib: libpdf_forge.a
+            binary: forge
+
+          # ── Windows x86_64 (MSVC) ───────────────────────────────────────────
+          - os: windows-latest
+            target: x86_64-pc-windows-msvc
+            archive_name: pdf-forge-windows-x86_64
+            dylib: pdf_forge.dll
+            staticlib: pdf_forge.lib
+            import_lib: pdf_forge.dll.lib
+            binary: forge.exe
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust toolchain + target
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.target }}
+
+      - name: Cache Cargo
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            target
+          key: ${{ runner.os }}-${{ matrix.target }}-release-${{ hashFiles('**/Cargo.lock') }}
+          restore-keys: ${{ runner.os }}-${{ matrix.target }}-release-
+
+      - name: Install cross-compilation toolchain (Linux aarch64 only)
+        if: matrix.apt_pkg != ''
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y ${{ matrix.apt_pkg }}
+
+      - name: Build release
+        env:
+          CARGO_TARGET_AARCH64_UNKNOWN_LINUX_GNU_LINKER: ${{ matrix.linker }}
+        run: cargo build --release --target ${{ matrix.target }}
+
+      # ── Package artefacts ──────────────────────────────────────────────────
+      - name: Stage artefacts (Unix)
+        if: runner.os != 'Windows'
+        run: |
+          mkdir -p dist
+          cp target/${{ matrix.target }}/release/${{ matrix.dylib }}   dist/
+          cp target/${{ matrix.target }}/release/${{ matrix.staticlib }} dist/
+          cp target/${{ matrix.target }}/release/${{ matrix.binary }}   dist/
+          cp include/rpdf.h dist/
+          cd dist && tar -czf ../${{ matrix.archive_name }}.tar.gz .
+
+      - name: Stage artefacts (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force dist | Out-Null
+          Copy-Item "target\${{ matrix.target }}\release\${{ matrix.dylib }}"    dist\
+          Copy-Item "target\${{ matrix.target }}\release\${{ matrix.staticlib }}" dist\
+          Copy-Item "target\${{ matrix.target }}\release\${{ matrix.import_lib }}" dist\
+          Copy-Item "target\${{ matrix.target }}\release\${{ matrix.binary }}"   dist\
+          Copy-Item "include\rpdf.h"                                              dist\
+          Compress-Archive -Path dist\* -DestinationPath "${{ matrix.archive_name }}.zip"
+
+      - name: Upload release asset (Unix)
+        if: runner.os != 'Windows'
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ${{ matrix.archive_name }}.tar.gz
+
+      - name: Upload release asset (Windows)
+        if: runner.os == 'Windows'
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ${{ matrix.archive_name }}.zip
+
+  # ── 4. macOS universal binary (fat dylib + fat binary) ───────────────────
+  release-macos-universal:
+    name: Release · macos-universal
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: [test]
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust toolchain + both macOS targets
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: x86_64-apple-darwin,aarch64-apple-darwin
+
+      - name: Cache Cargo
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            target
+          key: macos-universal-release-${{ hashFiles('**/Cargo.lock') }}
+          restore-keys: macos-universal-release-
+
+      - name: Build release (both arches)
+        run: |
+          cargo build --release --target x86_64-apple-darwin
+          cargo build --release --target aarch64-apple-darwin
+
+      - name: Lipo universal binaries
+        run: |
+          mkdir -p dist
+          # Universal dylib
+          lipo -create \
+            target/x86_64-apple-darwin/release/libpdf_forge.dylib \
+            target/aarch64-apple-darwin/release/libpdf_forge.dylib \
+            -output dist/libpdf_forge.dylib
+          # Universal static lib
+          lipo -create \
+            target/x86_64-apple-darwin/release/libpdf_forge.a \
+            target/aarch64-apple-darwin/release/libpdf_forge.a \
+            -output dist/libpdf_forge.a
+          # Universal CLI binary
+          lipo -create \
+            target/x86_64-apple-darwin/release/forge \
+            target/aarch64-apple-darwin/release/forge \
+            -output dist/forge
+          cp include/rpdf.h dist/
+          cd dist && tar -czf ../pdf-forge-macos-universal.tar.gz .
+
+      - name: Upload universal release asset
+        uses: softprops/action-gh-release@v2
+        with:
+          files: pdf-forge-macos-universal.tar.gz

@@ -1,0 +1,1269 @@
+%PDF-1.3
+%Л­Ро
+1 0 obj
+<</Type/Pages/Count 3/Kids[7 0 R 8 0 R 9 0 R]>>
+endobj
+2 0 obj
+<</Type/Font/Subtype/Type1/BaseFont/Helvetica/Encoding/WinAnsiEncoding>>
+endobj
+3 0 obj
+<</Type/Font/Subtype/Type1/BaseFont/Helvetica-Bold/Encoding/WinAnsiEncoding>>
+endobj
+4 0 obj
+<</F5 2 0 R/F6 3 0 R>>
+endobj
+5 0 obj
+<<>>
+endobj
+6 0 obj
+<<>>
+endobj
+7 0 obj
+<</Type/Page/MediaBox[0 0 595 842]/TrimBox[0 0 595 842]/CropBox[0 0 595 842]/Parent 1 0 R/Resources 10 0 R/Contents 11 0 R>>
+endobj
+8 0 obj
+<</Type/Page/MediaBox[0 0 595 842]/TrimBox[0 0 595 842]/CropBox[0 0 595 842]/Parent 1 0 R/Resources 12 0 R/Contents 13 0 R>>
+endobj
+9 0 obj
+<</Type/Page/MediaBox[0 0 595 842]/TrimBox[0 0 595 842]/CropBox[0 0 595 842]/Parent 1 0 R/Resources 14 0 R/Contents 15 0 R>>
+endobj
+10 0 obj
+<</Annots[]/Font 4 0 R/XObject 5 0 R/ExtGState 6 0 R>>
+endobj
+11 0 obj
+<</Length 2862>>stream
+BT
+64 739.39 Td
+/F6 30 Tf
+42 TL
+0 0 0 rg
+(Product Specification) Tj
+ET
+BT
+64 697.39 Td
+/F6 30 Tf
+42 TL
+0 0 0 rg
+(Document) Tj
+ET
+BT
+64 629.89 Td
+/F6 24 Tf
+33.6 TL
+0 0 0 rg
+(1. Introduction) Tj
+ET
+BT
+64 593.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(This document provides a comprehensive specification for) Tj
+ET
+BT
+64 571.49 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(the next generation platform. It covers architecture) Tj
+ET
+BT
+64 549.09 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(decisions, API design, security requirements, and) Tj
+ET
+BT
+64 526.69 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(deployment considerations.) Tj
+ET
+BT
+64 468.89 Td
+/F6 24 Tf
+33.6 TL
+0 0 0 rg
+(2. Architecture Overview) Tj
+ET
+BT
+64 432.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(The system follows a microservices architecture with the) Tj
+ET
+BT
+64 410.49002 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(following key components:) Tj
+ET
+BT
+72 379.89 Td
+/F5 16 Tf
+0 0 0 rg
+<9520> Tj
+ET
+BT
+88 379.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+<415049204761746577617920972068616E646C65732061757468656E7469636174696F6E20616E642072617465206C696D6974696E67> Tj
+ET
+BT
+72 353.89 Td
+/F5 16 Tf
+0 0 0 rg
+<9520> Tj
+ET
+BT
+88 353.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+<5573657220536572766963652097206D616E616765732075736572206163636F756E747320616E64207065726D697373696F6E73> Tj
+ET
+BT
+72 326.89 Td
+/F5 16 Tf
+0 0 0 rg
+<9520> Tj
+ET
+BT
+88 326.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+<4F72646572205365727669636520972070726F636573736573206F726465727320616E64207061796D656E7473> Tj
+ET
+BT
+72 300.89 Td
+/F5 16 Tf
+0 0 0 rg
+<9520> Tj
+ET
+BT
+88 300.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+<4E6F74696669636174696F6E205365727669636520972073656E647320656D61696C7320616E642070757368> Tj
+ET
+BT
+88 278.49002 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(notifications) Tj
+ET
+BT
+72 251.89001 Td
+/F5 16 Tf
+0 0 0 rg
+<9520> Tj
+ET
+BT
+88 251.89001 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+<416E616C79746963732053657276696365209720636F6C6C6563747320616E642070726F636573736573207573616765> Tj
+ET
+BT
+88 229.49002 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(telemetry) Tj
+ET
+BT
+64 167.89001 Td
+/F6 24 Tf
+33.6 TL
+0 0 0 rg
+(3. API Design) Tj
+ET
+BT
+64 131.89001 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(All APIs follow RESTful conventions with JSON payloads.) Tj
+ET
+0.898 0.906 0.922 rg
+64 72.890015 m
+220 72.890015 l
+220 113.890015 l
+64 113.890015 l
+h
+f
+0 0 0 RG
+1 w
+64 113.890015 m
+220 113.890015 l
+220 72.890015 l
+64 72.890015 l
+h
+S
+BT
+73 92.890015 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(Endpoint) Tj
+ET
+0.898 0.906 0.922 rg
+220 72.890015 m
+376 72.890015 l
+376 113.890015 l
+220 113.890015 l
+h
+f
+0 0 0 RG
+1 w
+220 113.890015 m
+376 113.890015 l
+376 72.890015 l
+220 72.890015 l
+h
+S
+BT
+229 92.890015 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(Method) Tj
+ET
+0.898 0.906 0.922 rg
+376 72.890015 m
+531 72.890015 l
+531 113.890015 l
+376 113.890015 l
+h
+f
+0 0 0 RG
+1 w
+376 113.890015 m
+531 113.890015 l
+531 72.890015 l
+376 72.890015 l
+h
+S
+BT
+385 92.890015 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(Description) Tj
+ET
+endstream 
+endobj
+12 0 obj
+<</Annots[]/Font 4 0 R/XObject 5 0 R/ExtGState 6 0 R>>
+endobj
+13 0 obj
+<</Length 4542>>stream
+0 0 0 RG
+1 w
+64 801.89 m
+220 801.89 l
+220 761.89 l
+64 761.89 l
+h
+S
+BT
+73 780.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(/api/users) Tj
+ET
+0 0 0 RG
+1 w
+220 801.89 m
+376 801.89 l
+376 761.89 l
+220 761.89 l
+h
+S
+BT
+229 780.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(GET) Tj
+ET
+0 0 0 RG
+1 w
+376 801.89 m
+531 801.89 l
+531 761.89 l
+376 761.89 l
+h
+S
+BT
+385 780.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(List users) Tj
+ET
+0 0 0 RG
+1 w
+64 760.89 m
+220 760.89 l
+220 719.89 l
+64 719.89 l
+h
+S
+BT
+73 739.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(/api/users) Tj
+ET
+0 0 0 RG
+1 w
+220 760.89 m
+376 760.89 l
+376 719.89 l
+220 719.89 l
+h
+S
+BT
+229 739.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(POST) Tj
+ET
+0 0 0 RG
+1 w
+376 760.89 m
+531 760.89 l
+531 719.89 l
+376 719.89 l
+h
+S
+BT
+385 739.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(Create user) Tj
+ET
+0 0 0 RG
+1 w
+64 720.89 m
+220 720.89 l
+220 680.89 l
+64 680.89 l
+h
+S
+BT
+73 699.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(/api/orders) Tj
+ET
+0 0 0 RG
+1 w
+220 720.89 m
+376 720.89 l
+376 680.89 l
+220 680.89 l
+h
+S
+BT
+229 699.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(GET) Tj
+ET
+0 0 0 RG
+1 w
+376 720.89 m
+531 720.89 l
+531 680.89 l
+376 680.89 l
+h
+S
+BT
+385 699.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(List orders) Tj
+ET
+0 0 0 RG
+1 w
+64 679.89 m
+220 679.89 l
+220 639.89 l
+64 639.89 l
+h
+S
+BT
+73 658.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(/api/orders) Tj
+ET
+0 0 0 RG
+1 w
+220 679.89 m
+376 679.89 l
+376 639.89 l
+220 639.89 l
+h
+S
+BT
+229 658.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(POST) Tj
+ET
+0 0 0 RG
+1 w
+376 679.89 m
+531 679.89 l
+531 639.89 l
+376 639.89 l
+h
+S
+BT
+385 658.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(Create order) Tj
+ET
+0 0 0 RG
+1 w
+64 639.89 m
+220 639.89 l
+220 598.89 l
+64 598.89 l
+h
+S
+BT
+73 618.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(/api/orders/:id) Tj
+ET
+0 0 0 RG
+1 w
+220 639.89 m
+376 639.89 l
+376 598.89 l
+220 598.89 l
+h
+S
+BT
+229 618.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(PUT) Tj
+ET
+0 0 0 RG
+1 w
+376 639.89 m
+531 639.89 l
+531 598.89 l
+376 598.89 l
+h
+S
+BT
+385 618.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(Update order) Tj
+ET
+0 0 0 RG
+1 w
+64 599.89 m
+220 599.89 l
+220 559.89 l
+64 559.89 l
+h
+S
+BT
+73 578.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(/api/orders/:id) Tj
+ET
+0 0 0 RG
+1 w
+220 599.89 m
+376 599.89 l
+376 559.89 l
+220 559.89 l
+h
+S
+BT
+229 578.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(DELETE) Tj
+ET
+0 0 0 RG
+1 w
+376 599.89 m
+531 599.89 l
+531 559.89 l
+376 559.89 l
+h
+S
+BT
+385 578.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(Cancel order) Tj
+ET
+0 0 0 RG
+1 w
+64 558.89 m
+220 558.89 l
+220 495.89 l
+64 495.89 l
+h
+S
+BT
+73 537.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(/api/notifications) Tj
+ET
+0 0 0 RG
+1 w
+220 558.89 m
+376 558.89 l
+376 495.89 l
+220 495.89 l
+h
+S
+BT
+229 537.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(GET) Tj
+ET
+0 0 0 RG
+1 w
+376 558.89 m
+531 558.89 l
+531 495.89 l
+376 495.89 l
+h
+S
+BT
+385 537.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(List) Tj
+ET
+BT
+385 515.49 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(notifications) Tj
+ET
+0 0 0 RG
+1 w
+64 495.89 m
+220 495.89 l
+220 455.89 l
+64 455.89 l
+h
+S
+BT
+73 474.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(/api/notifications) Tj
+ET
+0 0 0 RG
+1 w
+220 495.89 m
+376 495.89 l
+376 455.89 l
+220 455.89 l
+h
+S
+BT
+229 474.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(POST) Tj
+ET
+0 0 0 RG
+1 w
+376 495.89 m
+531 495.89 l
+531 455.89 l
+376 455.89 l
+h
+S
+BT
+385 474.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(Send notification) Tj
+ET
+BT
+64 407.89 Td
+/F6 24 Tf
+33.6 TL
+0 0 0 rg
+(4. Security Requirements) Tj
+ET
+BT
+64 371.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(The platform must meet the following security standards:) Tj
+ET
+BT
+72 341.89 Td
+/F5 16 Tf
+0 0 0 rg
+(1. ) Tj
+ET
+BT
+88 341.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(All data at rest must be encrypted using AES-256) Tj
+ET
+BT
+72 315.89 Td
+/F5 16 Tf
+0 0 0 rg
+(2. ) Tj
+ET
+BT
+88 315.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(All data in transit must use TLS 1.3) Tj
+ET
+BT
+72 288.89 Td
+/F5 16 Tf
+0 0 0 rg
+(3. ) Tj
+ET
+BT
+88 288.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(Authentication via OAuth 2.0 with PKCE) Tj
+ET
+BT
+72 262.89 Td
+/F5 16 Tf
+0 0 0 rg
+(4. ) Tj
+ET
+BT
+88 262.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+<526F6C652D62617365642061636365737320636F6E74726F6C2028524241432920666F7220616C6C20656E64706F696E7473> Tj
+ET
+BT
+72 235.89001 Td
+/F5 16 Tf
+0 0 0 rg
+(5. ) Tj
+ET
+BT
+88 235.89001 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(Audit logging for all state mutations) Tj
+ET
+BT
+72 209.89001 Td
+/F5 16 Tf
+0 0 0 rg
+(6. ) Tj
+ET
+BT
+88 209.89001 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(Rate limiting at the API gateway level) Tj
+ET
+BT
+64 146.89001 Td
+/F6 24 Tf
+33.6 TL
+0 0 0 rg
+(5. Deployment) Tj
+ET
+BT
+64 111.890015 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(The system will be deployed on Kubernetes with the) Tj
+ET
+BT
+64 89.49001 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(following resource allocations:) Tj
+ET
+endstream 
+endobj
+14 0 obj
+<</Annots[]/Font 4 0 R/XObject 5 0 R/ExtGState 6 0 R>>
+endobj
+15 0 obj
+<</Length 4606>>stream
+0.898 0.906 0.922 rg
+64 760.89 m
+181 760.89 l
+181 801.89 l
+64 801.89 l
+h
+f
+0 0 0 RG
+1 w
+64 801.89 m
+181 801.89 l
+181 760.89 l
+64 760.89 l
+h
+S
+BT
+73 780.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(Service) Tj
+ET
+0.898 0.906 0.922 rg
+181 760.89 m
+298 760.89 l
+298 801.89 l
+181 801.89 l
+h
+f
+0 0 0 RG
+1 w
+181 801.89 m
+298 801.89 l
+298 760.89 l
+181 760.89 l
+h
+S
+BT
+190 780.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(CPU) Tj
+ET
+0.898 0.906 0.922 rg
+298 760.89 m
+414 760.89 l
+414 801.89 l
+298 801.89 l
+h
+f
+0 0 0 RG
+1 w
+298 801.89 m
+414 801.89 l
+414 760.89 l
+298 760.89 l
+h
+S
+BT
+307 780.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(Memory) Tj
+ET
+0.898 0.906 0.922 rg
+414 760.89 m
+531 760.89 l
+531 801.89 l
+414 801.89 l
+h
+f
+0 0 0 RG
+1 w
+414 801.89 m
+531 801.89 l
+531 760.89 l
+414 760.89 l
+h
+S
+BT
+423 780.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(Replicas) Tj
+ET
+0 0 0 RG
+1 w
+64 761.89 m
+181 761.89 l
+181 721.89 l
+64 721.89 l
+h
+S
+BT
+73 740.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(API Gateway) Tj
+ET
+0 0 0 RG
+1 w
+181 761.89 m
+298 761.89 l
+298 721.89 l
+181 721.89 l
+h
+S
+BT
+190 740.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(2 cores) Tj
+ET
+0 0 0 RG
+1 w
+298 761.89 m
+414 761.89 l
+414 721.89 l
+298 721.89 l
+h
+S
+BT
+307 740.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(4 GB) Tj
+ET
+0 0 0 RG
+1 w
+414 761.89 m
+531 761.89 l
+531 721.89 l
+414 721.89 l
+h
+S
+BT
+423 740.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(3) Tj
+ET
+0 0 0 RG
+1 w
+64 720.89 m
+181 720.89 l
+181 680.89 l
+64 680.89 l
+h
+S
+BT
+73 699.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(User Service) Tj
+ET
+0 0 0 RG
+1 w
+181 720.89 m
+298 720.89 l
+298 680.89 l
+181 680.89 l
+h
+S
+BT
+190 699.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(1 core) Tj
+ET
+0 0 0 RG
+1 w
+298 720.89 m
+414 720.89 l
+414 680.89 l
+298 680.89 l
+h
+S
+BT
+307 699.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(2 GB) Tj
+ET
+0 0 0 RG
+1 w
+414 720.89 m
+531 720.89 l
+531 680.89 l
+414 680.89 l
+h
+S
+BT
+423 699.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(2) Tj
+ET
+0 0 0 RG
+1 w
+64 680.89 m
+181 680.89 l
+181 617.89 l
+64 617.89 l
+h
+S
+BT
+73 659.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(Order) Tj
+ET
+BT
+73 637.49 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(Service) Tj
+ET
+0 0 0 RG
+1 w
+181 680.89 m
+298 680.89 l
+298 617.89 l
+181 617.89 l
+h
+S
+BT
+190 659.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(2 cores) Tj
+ET
+0 0 0 RG
+1 w
+298 680.89 m
+414 680.89 l
+414 617.89 l
+298 617.89 l
+h
+S
+BT
+307 659.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(4 GB) Tj
+ET
+0 0 0 RG
+1 w
+414 680.89 m
+531 680.89 l
+531 617.89 l
+414 617.89 l
+h
+S
+BT
+423 659.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(3) Tj
+ET
+0 0 0 RG
+1 w
+64 617.89 m
+181 617.89 l
+181 554.89 l
+64 554.89 l
+h
+S
+BT
+73 596.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(Notification) Tj
+ET
+BT
+73 574.49 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(Service) Tj
+ET
+0 0 0 RG
+1 w
+181 617.89 m
+298 617.89 l
+298 554.89 l
+181 554.89 l
+h
+S
+BT
+190 596.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(0.5 cores) Tj
+ET
+0 0 0 RG
+1 w
+298 617.89 m
+414 617.89 l
+414 554.89 l
+298 554.89 l
+h
+S
+BT
+307 596.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(1 GB) Tj
+ET
+0 0 0 RG
+1 w
+414 617.89 m
+531 617.89 l
+531 554.89 l
+414 554.89 l
+h
+S
+BT
+423 596.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(2) Tj
+ET
+0 0 0 RG
+1 w
+64 554.89 m
+181 554.89 l
+181 491.89 l
+64 491.89 l
+h
+S
+BT
+73 533.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(Analytics) Tj
+ET
+BT
+73 511.49 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(Service) Tj
+ET
+0 0 0 RG
+1 w
+181 554.89 m
+298 554.89 l
+298 491.89 l
+181 491.89 l
+h
+S
+BT
+190 533.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(4 cores) Tj
+ET
+0 0 0 RG
+1 w
+298 554.89 m
+414 554.89 l
+414 491.89 l
+298 491.89 l
+h
+S
+BT
+307 533.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(8 GB) Tj
+ET
+0 0 0 RG
+1 w
+414 554.89 m
+531 554.89 l
+531 491.89 l
+414 491.89 l
+h
+S
+BT
+423 533.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(2) Tj
+ET
+BT
+64 443.89 Td
+/F6 24 Tf
+33.6 TL
+0 0 0 rg
+(6. Monitoring and Observability) Tj
+ET
+BT
+64 408.89 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(All services emit structured logs, metrics, and) Tj
+ET
+BT
+64 386.49002 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(distributed traces. A centralized observability stack) Tj
+ET
+BT
+64 364.09003 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+<2850726F6D6574686575732C2047726166616E612C204A6165676572292070726F76696465732064617368626F617264732C> Tj
+ET
+BT
+64 341.69 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(alerting, and end-to-end trace correlation.) Tj
+ET
+BT
+64 282.89 Td
+/F6 24 Tf
+33.6 TL
+0 0 0 rg
+(7. Conclusion) Tj
+ET
+BT
+64 246.89001 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(This specification provides the foundation for the next) Tj
+ET
+BT
+64 224.49002 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(generation of our platform. All teams should review and) Tj
+ET
+BT
+64 202.09001 Td
+/F5 16 Tf
+22.4 TL
+0 0 0 rg
+(provide feedback by end of Q1 2026.) Tj
+ET
+BT
+64 166.89001 Td
+/F5 12 Tf
+16.8 TL
+0.424 0.447 0.502 rg
+<446F63756D656E742076657273696F6E20312E302097204C61737420757064617465642046656272756172792032303236> Tj
+ET
+endstream 
+endobj
+16 0 obj
+<</Type/Catalog/PageLayout/OneColumn/PageMode/UseNone/Pages 1 0 R>>
+endobj
+17 0 obj
+<</Trapped/False/CreationDate(D:19700101000000+00'00')/ModDate(D:19700101000000+00'00')/GTS_PDFXVersion()/Title(rpdf output)/Author()/Creator()/Producer()/Subject()/Identifier()/Keywords()>>
+endobj
+xref
+0 18
+0000000000 65535 f 
+0000000015 00000 n 
+0000000078 00000 n 
+0000000166 00000 n 
+0000000259 00000 n 
+0000000297 00000 n 
+0000000317 00000 n 
+0000000337 00000 n 
+0000000477 00000 n 
+0000000617 00000 n 
+0000000757 00000 n 
+0000000828 00000 n 
+0000003741 00000 n 
+0000003812 00000 n 
+0000008405 00000 n 
+0000008476 00000 n 
+0000013133 00000 n 
+0000013217 00000 n 
+trailer
+<</Root 16 0 R/Info 17 0 R/ID[(IFGJFJGDADJHICFHDGBDEIHHDCIDCCFG)(ICHHIICDCBGIEDDCIBDFIJIECHGBJAEF)]/Size 18>>
+startxref
+13424
+%%EOF

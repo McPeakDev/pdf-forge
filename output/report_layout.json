@@ -1,0 +1,1445 @@
+{
+  "page_width_pt": 595.28,
+  "page_height_pt": 841.89,
+  "pages": [
+    {
+      "page_index": 0,
+      "boxes": [
+        {
+          "x": 64.0,
+          "y": 80.0,
+          "width": 264.0,
+          "height": 42.0,
+          "background_color": null,
+          "border": null,
+          "text": {
+            "lines": [
+              {
+                "text": "Quarterly Report",
+                "x_offset": 0.0,
+                "y_offset": 0.0
+              }
+            ],
+            "font_family": "Helvetica",
+            "font_size": 30.0,
+            "bold": true,
+            "italic": false,
+            "color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "line_height": 42.0,
+            "text_align": "left",
+            "underline": false,
+            "list_marker": null
+          },
+          "image": null,
+          "children": []
+        },
+        {
+          "x": 64.0,
+          "y": 130.0,
+          "width": 176.0,
+          "height": 22.0,
+          "background_color": null,
+          "border": null,
+          "text": {
+            "lines": [
+              {
+                "text": "Q4 2025 — Confidential",
+                "x_offset": 0.0,
+                "y_offset": 0.0
+              }
+            ],
+            "font_family": "Helvetica",
+            "font_size": 16.0,
+            "bold": false,
+            "italic": false,
+            "color": [
+              0.424,
+              0.447,
+              0.502,
+              1.0
+            ],
+            "line_height": 22.4,
+            "text_align": "left",
+            "underline": false,
+            "list_marker": null
+          },
+          "image": null,
+          "children": []
+        },
+        {
+          "x": 64.0,
+          "y": 190.0,
+          "width": 224.0,
+          "height": 34.0,
+          "background_color": null,
+          "border": null,
+          "text": {
+            "lines": [
+              {
+                "text": "Executive Summary",
+                "x_offset": 0.0,
+                "y_offset": 0.0
+              }
+            ],
+            "font_family": "Helvetica",
+            "font_size": 24.0,
+            "bold": true,
+            "italic": false,
+            "color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "line_height": 33.6,
+            "text_align": "left",
+            "underline": false,
+            "list_marker": null
+          },
+          "image": null,
+          "children": []
+        },
+        {
+          "x": 64.0,
+          "y": 232.0,
+          "width": 464.0,
+          "height": 67.0,
+          "background_color": null,
+          "border": null,
+          "text": {
+            "lines": [
+              {
+                "text": "Revenue grew by 23% year-over-year, reaching a total of",
+                "x_offset": 0.0,
+                "y_offset": 0.0
+              },
+              {
+                "text": "$4.2M for the quarter. Our customer base expanded",
+                "x_offset": 0.0,
+                "y_offset": 22.4
+              },
+              {
+                "text": "significantly with notable wins in the enterprise segment.",
+                "x_offset": 0.0,
+                "y_offset": 44.8
+              }
+            ],
+            "font_family": "Helvetica",
+            "font_size": 16.0,
+            "bold": false,
+            "italic": false,
+            "color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "line_height": 22.4,
+            "text_align": "left",
+            "underline": false,
+            "list_marker": null
+          },
+          "image": null,
+          "children": []
+        },
+        {
+          "x": 64.0,
+          "y": 329.0,
+          "width": 185.0,
+          "height": 34.0,
+          "background_color": null,
+          "border": null,
+          "text": {
+            "lines": [
+              {
+                "text": "Key Highlights",
+                "x_offset": 0.0,
+                "y_offset": 0.0
+              }
+            ],
+            "font_family": "Helvetica",
+            "font_size": 24.0,
+            "bold": true,
+            "italic": false,
+            "color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "line_height": 33.6,
+            "text_align": "left",
+            "underline": false,
+            "list_marker": null
+          },
+          "image": null,
+          "children": []
+        },
+        {
+          "x": 64.0,
+          "y": 371.0,
+          "width": 467.0,
+          "height": 105.0,
+          "background_color": null,
+          "border": null,
+          "text": null,
+          "image": null,
+          "children": [
+            {
+              "x": 88.0,
+              "y": 371.0,
+              "width": 443.0,
+              "height": 22.0,
+              "background_color": null,
+              "border": null,
+              "text": {
+                "lines": [],
+                "font_family": "Helvetica",
+                "font_size": 16.0,
+                "bold": false,
+                "italic": false,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "line_height": 22.4,
+                "text_align": "left",
+                "underline": false,
+                "list_marker": "• "
+              },
+              "image": null,
+              "children": [
+                {
+                  "x": 88.0,
+                  "y": 371.0,
+                  "width": 320.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Customer acquisition cost reduced by 15%",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 88.0,
+              "y": 397.0,
+              "width": 443.0,
+              "height": 23.0,
+              "background_color": null,
+              "border": null,
+              "text": {
+                "lines": [],
+                "font_family": "Helvetica",
+                "font_size": 16.0,
+                "bold": false,
+                "italic": false,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "line_height": 22.4,
+                "text_align": "left",
+                "underline": false,
+                "list_marker": "• "
+              },
+              "image": null,
+              "children": [
+                {
+                  "x": 88.0,
+                  "y": 397.0,
+                  "width": 264.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Net promoter score improved to 72",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 88.0,
+              "y": 424.0,
+              "width": 443.0,
+              "height": 22.0,
+              "background_color": null,
+              "border": null,
+              "text": {
+                "lines": [],
+                "font_family": "Helvetica",
+                "font_size": 16.0,
+                "bold": false,
+                "italic": false,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "line_height": 22.4,
+                "text_align": "left",
+                "underline": false,
+                "list_marker": "• "
+              },
+              "image": null,
+              "children": [
+                {
+                  "x": 88.0,
+                  "y": 424.0,
+                  "width": 320.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Three new enterprise partnerships signed",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 88.0,
+              "y": 450.0,
+              "width": 443.0,
+              "height": 22.0,
+              "background_color": null,
+              "border": null,
+              "text": {
+                "lines": [],
+                "font_family": "Helvetica",
+                "font_size": 16.0,
+                "bold": false,
+                "italic": false,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "line_height": 22.4,
+                "text_align": "left",
+                "underline": false,
+                "list_marker": "• "
+              },
+              "image": null,
+              "children": [
+                {
+                  "x": 88.0,
+                  "y": 450.0,
+                  "width": 328.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Product reliability reached 99.97% uptime",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "x": 64.0,
+          "y": 506.0,
+          "width": 158.0,
+          "height": 34.0,
+          "background_color": null,
+          "border": null,
+          "text": {
+            "lines": [
+              {
+                "text": "Action Items",
+                "x_offset": 0.0,
+                "y_offset": 0.0
+              }
+            ],
+            "font_family": "Helvetica",
+            "font_size": 24.0,
+            "bold": true,
+            "italic": false,
+            "color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "line_height": 33.6,
+            "text_align": "left",
+            "underline": false,
+            "list_marker": null
+          },
+          "image": null,
+          "children": []
+        },
+        {
+          "x": 64.0,
+          "y": 548.0,
+          "width": 467.0,
+          "height": 79.0,
+          "background_color": null,
+          "border": null,
+          "text": null,
+          "image": null,
+          "children": [
+            {
+              "x": 88.0,
+              "y": 548.0,
+              "width": 443.0,
+              "height": 22.0,
+              "background_color": null,
+              "border": null,
+              "text": {
+                "lines": [],
+                "font_family": "Helvetica",
+                "font_size": 16.0,
+                "bold": false,
+                "italic": false,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "line_height": 22.4,
+                "text_align": "left",
+                "underline": false,
+                "list_marker": "1. "
+              },
+              "image": null,
+              "children": [
+                {
+                  "x": 88.0,
+                  "y": 548.0,
+                  "width": 224.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Expand sales team by Q1 2026",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 88.0,
+              "y": 574.0,
+              "width": 443.0,
+              "height": 23.0,
+              "background_color": null,
+              "border": null,
+              "text": {
+                "lines": [],
+                "font_family": "Helvetica",
+                "font_size": 16.0,
+                "bold": false,
+                "italic": false,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "line_height": 22.4,
+                "text_align": "left",
+                "underline": false,
+                "list_marker": "2. "
+              },
+              "image": null,
+              "children": [
+                {
+                  "x": 88.0,
+                  "y": 574.0,
+                  "width": 240.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Launch mobile application beta",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 88.0,
+              "y": 601.0,
+              "width": 443.0,
+              "height": 22.0,
+              "background_color": null,
+              "border": null,
+              "text": {
+                "lines": [],
+                "font_family": "Helvetica",
+                "font_size": 16.0,
+                "bold": false,
+                "italic": false,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "line_height": 22.4,
+                "text_align": "left",
+                "underline": false,
+                "list_marker": "3. "
+              },
+              "image": null,
+              "children": [
+                {
+                  "x": 88.0,
+                  "y": 601.0,
+                  "width": 280.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Complete SOC2 Type II certification",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "x": 64.0,
+          "y": 655.0,
+          "width": 187.0,
+          "height": 28.0,
+          "background_color": null,
+          "border": null,
+          "text": {
+            "lines": [
+              {
+                "text": "Revenue Breakdown",
+                "x_offset": 0.0,
+                "y_offset": 0.0
+              }
+            ],
+            "font_family": "Helvetica",
+            "font_size": 20.0,
+            "bold": true,
+            "italic": false,
+            "color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "line_height": 28.0,
+            "text_align": "left",
+            "underline": false,
+            "list_marker": null
+          },
+          "image": null,
+          "children": []
+        },
+        {
+          "x": 64.0,
+          "y": 691.0,
+          "width": 467.0,
+          "height": 41.0,
+          "background_color": null,
+          "border": null,
+          "text": null,
+          "image": null,
+          "children": [
+            {
+              "x": 64.0,
+              "y": 691.0,
+              "width": 156.0,
+              "height": 41.0,
+              "background_color": [
+                0.898,
+                0.906,
+                0.922,
+                1.0
+              ],
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 73.0,
+                  "y": 700.0,
+                  "width": 56.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Segment",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 220.0,
+              "y": 691.0,
+              "width": 156.0,
+              "height": 41.0,
+              "background_color": [
+                0.898,
+                0.906,
+                0.922,
+                1.0
+              ],
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 229.0,
+                  "y": 700.0,
+                  "width": 56.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Revenue",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 376.0,
+              "y": 691.0,
+              "width": 155.0,
+              "height": 41.0,
+              "background_color": [
+                0.898,
+                0.906,
+                0.922,
+                1.0
+              ],
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 385.0,
+                  "y": 700.0,
+                  "width": 48.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Growth",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "x": 64.0,
+          "y": 731.0,
+          "width": 467.0,
+          "height": 40.0,
+          "background_color": null,
+          "border": null,
+          "text": null,
+          "image": null,
+          "children": [
+            {
+              "x": 64.0,
+              "y": 731.0,
+              "width": 156.0,
+              "height": 40.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 73.0,
+                  "y": 740.0,
+                  "width": 80.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Enterprise",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 220.0,
+              "y": 731.0,
+              "width": 156.0,
+              "height": 40.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 229.0,
+                  "y": 740.0,
+                  "width": 40.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "$2.1M",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 376.0,
+              "y": 731.0,
+              "width": 155.0,
+              "height": 40.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 385.0,
+                  "y": 740.0,
+                  "width": 32.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "+31%",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.133,
+                      0.773,
+                      0.369,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 0,
+      "boxes": [
+        {
+          "x": 64.0,
+          "y": 40.0,
+          "width": 467.0,
+          "height": 40.0,
+          "background_color": null,
+          "border": null,
+          "text": null,
+          "image": null,
+          "children": [
+            {
+              "x": 64.0,
+              "y": 40.0,
+              "width": 156.0,
+              "height": 40.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 73.0,
+                  "y": 49.0,
+                  "width": 80.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Mid-Market",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 220.0,
+              "y": 40.0,
+              "width": 156.0,
+              "height": 40.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 229.0,
+                  "y": 49.0,
+                  "width": 40.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "$1.4M",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 376.0,
+              "y": 40.0,
+              "width": 155.0,
+              "height": 40.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 385.0,
+                  "y": 49.0,
+                  "width": 32.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "+18%",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.133,
+                      0.773,
+                      0.369,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "x": 64.0,
+          "y": 80.0,
+          "width": 467.0,
+          "height": 41.0,
+          "background_color": null,
+          "border": null,
+          "text": null,
+          "image": null,
+          "children": [
+            {
+              "x": 64.0,
+              "y": 80.0,
+              "width": 156.0,
+              "height": 41.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 73.0,
+                  "y": 89.0,
+                  "width": 24.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "SMB",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 220.0,
+              "y": 80.0,
+              "width": 156.0,
+              "height": 41.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 229.0,
+                  "y": 89.0,
+                  "width": 40.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "$0.7M",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 376.0,
+              "y": 80.0,
+              "width": 155.0,
+              "height": 41.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 385.0,
+                  "y": 89.0,
+                  "width": 32.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "+12%",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.133,
+                      0.773,
+                      0.369,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "x": 64.0,
+          "y": 161.0,
+          "width": 392.0,
+          "height": 39.0,
+          "background_color": null,
+          "border": null,
+          "text": {
+            "lines": [
+              {
+                "text": "This document is confidential. Do not distribute without",
+                "x_offset": 0.0,
+                "y_offset": 0.0
+              },
+              {
+                "text": "authorization.",
+                "x_offset": 0.0,
+                "y_offset": 19.6
+              }
+            ],
+            "font_family": "Helvetica",
+            "font_size": 14.0,
+            "bold": false,
+            "italic": false,
+            "color": [
+              0.424,
+              0.447,
+              0.502,
+              1.0
+            ],
+            "line_height": 19.6,
+            "text_align": "left",
+            "underline": false,
+            "list_marker": null
+          },
+          "image": null,
+          "children": []
+        }
+      ]
+    }
+  ]
+}

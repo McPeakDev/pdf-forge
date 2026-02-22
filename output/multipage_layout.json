@@ -1,0 +1,4247 @@
+{
+  "page_width_pt": 595.28,
+  "page_height_pt": 841.89,
+  "pages": [
+    {
+      "page_index": 0,
+      "boxes": [
+        {
+          "x": 64.0,
+          "y": 80.0,
+          "width": 347.0,
+          "height": 84.0,
+          "background_color": null,
+          "border": null,
+          "text": {
+            "lines": [
+              {
+                "text": "Product Specification",
+                "x_offset": 0.0,
+                "y_offset": 0.0
+              },
+              {
+                "text": "Document",
+                "x_offset": 0.0,
+                "y_offset": 42.0
+              }
+            ],
+            "font_family": "Helvetica",
+            "font_size": 30.0,
+            "bold": true,
+            "italic": false,
+            "color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "line_height": 42.0,
+            "text_align": "left",
+            "underline": false,
+            "list_marker": null
+          },
+          "image": null,
+          "children": []
+        },
+        {
+          "x": 64.0,
+          "y": 194.0,
+          "width": 198.0,
+          "height": 34.0,
+          "background_color": null,
+          "border": null,
+          "text": {
+            "lines": [
+              {
+                "text": "1. Introduction",
+                "x_offset": 0.0,
+                "y_offset": 0.0
+              }
+            ],
+            "font_family": "Helvetica",
+            "font_size": 24.0,
+            "bold": true,
+            "italic": false,
+            "color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "line_height": 33.6,
+            "text_align": "left",
+            "underline": false,
+            "list_marker": null
+          },
+          "image": null,
+          "children": []
+        },
+        {
+          "x": 64.0,
+          "y": 236.0,
+          "width": 448.0,
+          "height": 89.0,
+          "background_color": null,
+          "border": null,
+          "text": {
+            "lines": [
+              {
+                "text": "This document provides a comprehensive specification for",
+                "x_offset": 0.0,
+                "y_offset": 0.0
+              },
+              {
+                "text": "the next generation platform. It covers architecture",
+                "x_offset": 0.0,
+                "y_offset": 22.4
+              },
+              {
+                "text": "decisions, API design, security requirements, and",
+                "x_offset": 0.0,
+                "y_offset": 44.8
+              },
+              {
+                "text": "deployment considerations.",
+                "x_offset": 0.0,
+                "y_offset": 67.2
+              }
+            ],
+            "font_family": "Helvetica",
+            "font_size": 16.0,
+            "bold": false,
+            "italic": false,
+            "color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "line_height": 22.4,
+            "text_align": "left",
+            "underline": false,
+            "list_marker": null
+          },
+          "image": null,
+          "children": []
+        },
+        {
+          "x": 64.0,
+          "y": 355.0,
+          "width": 317.0,
+          "height": 34.0,
+          "background_color": null,
+          "border": null,
+          "text": {
+            "lines": [
+              {
+                "text": "2. Architecture Overview",
+                "x_offset": 0.0,
+                "y_offset": 0.0
+              }
+            ],
+            "font_family": "Helvetica",
+            "font_size": 24.0,
+            "bold": true,
+            "italic": false,
+            "color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "line_height": 33.6,
+            "text_align": "left",
+            "underline": false,
+            "list_marker": null
+          },
+          "image": null,
+          "children": []
+        },
+        {
+          "x": 64.0,
+          "y": 397.0,
+          "width": 448.0,
+          "height": 45.0,
+          "background_color": null,
+          "border": null,
+          "text": {
+            "lines": [
+              {
+                "text": "The system follows a microservices architecture with the",
+                "x_offset": 0.0,
+                "y_offset": 0.0
+              },
+              {
+                "text": "following key components:",
+                "x_offset": 0.0,
+                "y_offset": 22.4
+              }
+            ],
+            "font_family": "Helvetica",
+            "font_size": 16.0,
+            "bold": false,
+            "italic": false,
+            "color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "line_height": 22.4,
+            "text_align": "left",
+            "underline": false,
+            "list_marker": null
+          },
+          "image": null,
+          "children": []
+        },
+        {
+          "x": 64.0,
+          "y": 450.0,
+          "width": 467.0,
+          "height": 176.0,
+          "background_color": null,
+          "border": null,
+          "text": null,
+          "image": null,
+          "children": [
+            {
+              "x": 88.0,
+              "y": 450.0,
+              "width": 443.0,
+              "height": 22.0,
+              "background_color": null,
+              "border": null,
+              "text": {
+                "lines": [],
+                "font_family": "Helvetica",
+                "font_size": 16.0,
+                "bold": false,
+                "italic": false,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "line_height": 22.4,
+                "text_align": "left",
+                "underline": false,
+                "list_marker": "• "
+              },
+              "image": null,
+              "children": [
+                {
+                  "x": 88.0,
+                  "y": 450.0,
+                  "width": 432.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "API Gateway — handles authentication and rate limiting",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 88.0,
+              "y": 476.0,
+              "width": 443.0,
+              "height": 22.0,
+              "background_color": null,
+              "border": null,
+              "text": {
+                "lines": [],
+                "font_family": "Helvetica",
+                "font_size": 16.0,
+                "bold": false,
+                "italic": false,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "line_height": 22.4,
+                "text_align": "left",
+                "underline": false,
+                "list_marker": "• "
+              },
+              "image": null,
+              "children": [
+                {
+                  "x": 88.0,
+                  "y": 476.0,
+                  "width": 416.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "User Service — manages user accounts and permissions",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 88.0,
+              "y": 503.0,
+              "width": 443.0,
+              "height": 23.0,
+              "background_color": null,
+              "border": null,
+              "text": {
+                "lines": [],
+                "font_family": "Helvetica",
+                "font_size": 16.0,
+                "bold": false,
+                "italic": false,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "line_height": 22.4,
+                "text_align": "left",
+                "underline": false,
+                "list_marker": "• "
+              },
+              "image": null,
+              "children": [
+                {
+                  "x": 88.0,
+                  "y": 503.0,
+                  "width": 360.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Order Service — processes orders and payments",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 88.0,
+              "y": 529.0,
+              "width": 443.0,
+              "height": 45.0,
+              "background_color": null,
+              "border": null,
+              "text": {
+                "lines": [],
+                "font_family": "Helvetica",
+                "font_size": 16.0,
+                "bold": false,
+                "italic": false,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "line_height": 22.4,
+                "text_align": "left",
+                "underline": false,
+                "list_marker": "• "
+              },
+              "image": null,
+              "children": [
+                {
+                  "x": 88.0,
+                  "y": 529.0,
+                  "width": 352.0,
+                  "height": 45.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Notification Service — sends emails and push",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      },
+                      {
+                        "text": "notifications",
+                        "x_offset": 0.0,
+                        "y_offset": 22.4
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 88.0,
+              "y": 578.0,
+              "width": 443.0,
+              "height": 44.0,
+              "background_color": null,
+              "border": null,
+              "text": {
+                "lines": [],
+                "font_family": "Helvetica",
+                "font_size": 16.0,
+                "bold": false,
+                "italic": false,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "line_height": 22.4,
+                "text_align": "left",
+                "underline": false,
+                "list_marker": "• "
+              },
+              "image": null,
+              "children": [
+                {
+                  "x": 88.0,
+                  "y": 578.0,
+                  "width": 384.0,
+                  "height": 44.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Analytics Service — collects and processes usage",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      },
+                      {
+                        "text": "telemetry",
+                        "x_offset": 0.0,
+                        "y_offset": 22.4
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "x": 64.0,
+          "y": 656.0,
+          "width": 172.0,
+          "height": 34.0,
+          "background_color": null,
+          "border": null,
+          "text": {
+            "lines": [
+              {
+                "text": "3. API Design",
+                "x_offset": 0.0,
+                "y_offset": 0.0
+              }
+            ],
+            "font_family": "Helvetica",
+            "font_size": 24.0,
+            "bold": true,
+            "italic": false,
+            "color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "line_height": 33.6,
+            "text_align": "left",
+            "underline": false,
+            "list_marker": null
+          },
+          "image": null,
+          "children": []
+        },
+        {
+          "x": 64.0,
+          "y": 698.0,
+          "width": 440.0,
+          "height": 22.0,
+          "background_color": null,
+          "border": null,
+          "text": {
+            "lines": [
+              {
+                "text": "All APIs follow RESTful conventions with JSON payloads.",
+                "x_offset": 0.0,
+                "y_offset": 0.0
+              }
+            ],
+            "font_family": "Helvetica",
+            "font_size": 16.0,
+            "bold": false,
+            "italic": false,
+            "color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "line_height": 22.4,
+            "text_align": "left",
+            "underline": false,
+            "list_marker": null
+          },
+          "image": null,
+          "children": []
+        },
+        {
+          "x": 64.0,
+          "y": 728.0,
+          "width": 467.0,
+          "height": 41.0,
+          "background_color": null,
+          "border": null,
+          "text": null,
+          "image": null,
+          "children": [
+            {
+              "x": 64.0,
+              "y": 728.0,
+              "width": 156.0,
+              "height": 41.0,
+              "background_color": [
+                0.898,
+                0.906,
+                0.922,
+                1.0
+              ],
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 73.0,
+                  "y": 737.0,
+                  "width": 64.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Endpoint",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 220.0,
+              "y": 728.0,
+              "width": 156.0,
+              "height": 41.0,
+              "background_color": [
+                0.898,
+                0.906,
+                0.922,
+                1.0
+              ],
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 229.0,
+                  "y": 737.0,
+                  "width": 48.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Method",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 376.0,
+              "y": 728.0,
+              "width": 155.0,
+              "height": 41.0,
+              "background_color": [
+                0.898,
+                0.906,
+                0.922,
+                1.0
+              ],
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 385.0,
+                  "y": 737.0,
+                  "width": 88.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Description",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 0,
+      "boxes": [
+        {
+          "x": 64.0,
+          "y": 40.0,
+          "width": 467.0,
+          "height": 40.0,
+          "background_color": null,
+          "border": null,
+          "text": null,
+          "image": null,
+          "children": [
+            {
+              "x": 64.0,
+              "y": 40.0,
+              "width": 156.0,
+              "height": 40.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 73.0,
+                  "y": 49.0,
+                  "width": 80.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "/api/users",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 220.0,
+              "y": 40.0,
+              "width": 156.0,
+              "height": 40.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 229.0,
+                  "y": 49.0,
+                  "width": 24.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "GET",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 376.0,
+              "y": 40.0,
+              "width": 155.0,
+              "height": 40.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 385.0,
+                  "y": 49.0,
+                  "width": 80.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "List users",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "x": 64.0,
+          "y": 81.0,
+          "width": 467.0,
+          "height": 41.0,
+          "background_color": null,
+          "border": null,
+          "text": null,
+          "image": null,
+          "children": [
+            {
+              "x": 64.0,
+              "y": 81.0,
+              "width": 156.0,
+              "height": 41.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 73.0,
+                  "y": 90.0,
+                  "width": 80.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "/api/users",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 220.0,
+              "y": 81.0,
+              "width": 156.0,
+              "height": 41.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 229.0,
+                  "y": 90.0,
+                  "width": 32.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "POST",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 376.0,
+              "y": 81.0,
+              "width": 155.0,
+              "height": 41.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 385.0,
+                  "y": 90.0,
+                  "width": 88.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Create user",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "x": 64.0,
+          "y": 121.0,
+          "width": 467.0,
+          "height": 40.0,
+          "background_color": null,
+          "border": null,
+          "text": null,
+          "image": null,
+          "children": [
+            {
+              "x": 64.0,
+              "y": 121.0,
+              "width": 156.0,
+              "height": 40.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 73.0,
+                  "y": 130.0,
+                  "width": 88.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "/api/orders",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 220.0,
+              "y": 121.0,
+              "width": 156.0,
+              "height": 40.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 229.0,
+                  "y": 130.0,
+                  "width": 24.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "GET",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 376.0,
+              "y": 121.0,
+              "width": 155.0,
+              "height": 40.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 385.0,
+                  "y": 130.0,
+                  "width": 88.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "List orders",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "x": 64.0,
+          "y": 162.0,
+          "width": 467.0,
+          "height": 40.0,
+          "background_color": null,
+          "border": null,
+          "text": null,
+          "image": null,
+          "children": [
+            {
+              "x": 64.0,
+              "y": 162.0,
+              "width": 156.0,
+              "height": 40.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 73.0,
+                  "y": 171.0,
+                  "width": 88.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "/api/orders",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 220.0,
+              "y": 162.0,
+              "width": 156.0,
+              "height": 40.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 229.0,
+                  "y": 171.0,
+                  "width": 32.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "POST",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 376.0,
+              "y": 162.0,
+              "width": 155.0,
+              "height": 40.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 385.0,
+                  "y": 171.0,
+                  "width": 96.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Create order",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "x": 64.0,
+          "y": 202.0,
+          "width": 467.0,
+          "height": 41.0,
+          "background_color": null,
+          "border": null,
+          "text": null,
+          "image": null,
+          "children": [
+            {
+              "x": 64.0,
+              "y": 202.0,
+              "width": 156.0,
+              "height": 41.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 73.0,
+                  "y": 211.0,
+                  "width": 120.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "/api/orders/:id",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 220.0,
+              "y": 202.0,
+              "width": 156.0,
+              "height": 41.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 229.0,
+                  "y": 211.0,
+                  "width": 24.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "PUT",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 376.0,
+              "y": 202.0,
+              "width": 155.0,
+              "height": 41.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 385.0,
+                  "y": 211.0,
+                  "width": 96.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Update order",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "x": 64.0,
+          "y": 242.0,
+          "width": 467.0,
+          "height": 40.0,
+          "background_color": null,
+          "border": null,
+          "text": null,
+          "image": null,
+          "children": [
+            {
+              "x": 64.0,
+              "y": 242.0,
+              "width": 156.0,
+              "height": 40.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 73.0,
+                  "y": 251.0,
+                  "width": 120.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "/api/orders/:id",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 220.0,
+              "y": 242.0,
+              "width": 156.0,
+              "height": 40.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 229.0,
+                  "y": 251.0,
+                  "width": 48.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "DELETE",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 376.0,
+              "y": 242.0,
+              "width": 155.0,
+              "height": 40.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 385.0,
+                  "y": 251.0,
+                  "width": 96.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Cancel order",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "x": 64.0,
+          "y": 283.0,
+          "width": 467.0,
+          "height": 63.0,
+          "background_color": null,
+          "border": null,
+          "text": null,
+          "image": null,
+          "children": [
+            {
+              "x": 64.0,
+              "y": 283.0,
+              "width": 156.0,
+              "height": 63.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 73.0,
+                  "y": 292.0,
+                  "width": 144.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "/api/notifications",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 220.0,
+              "y": 283.0,
+              "width": 156.0,
+              "height": 63.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 229.0,
+                  "y": 292.0,
+                  "width": 24.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "GET",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 376.0,
+              "y": 283.0,
+              "width": 155.0,
+              "height": 63.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 385.0,
+                  "y": 292.0,
+                  "width": 104.0,
+                  "height": 45.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "List",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      },
+                      {
+                        "text": "notifications",
+                        "x_offset": 0.0,
+                        "y_offset": 22.4
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "x": 64.0,
+          "y": 346.0,
+          "width": 467.0,
+          "height": 40.0,
+          "background_color": null,
+          "border": null,
+          "text": null,
+          "image": null,
+          "children": [
+            {
+              "x": 64.0,
+              "y": 346.0,
+              "width": 156.0,
+              "height": 40.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 73.0,
+                  "y": 355.0,
+                  "width": 144.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "/api/notifications",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 220.0,
+              "y": 346.0,
+              "width": 156.0,
+              "height": 40.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 229.0,
+                  "y": 355.0,
+                  "width": 32.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "POST",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 376.0,
+              "y": 346.0,
+              "width": 155.0,
+              "height": 40.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 385.0,
+                  "y": 355.0,
+                  "width": 136.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Send notification",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "x": 64.0,
+          "y": 416.0,
+          "width": 317.0,
+          "height": 34.0,
+          "background_color": null,
+          "border": null,
+          "text": {
+            "lines": [
+              {
+                "text": "4. Security Requirements",
+                "x_offset": 0.0,
+                "y_offset": 0.0
+              }
+            ],
+            "font_family": "Helvetica",
+            "font_size": 24.0,
+            "bold": true,
+            "italic": false,
+            "color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "line_height": 33.6,
+            "text_align": "left",
+            "underline": false,
+            "list_marker": null
+          },
+          "image": null,
+          "children": []
+        },
+        {
+          "x": 64.0,
+          "y": 458.0,
+          "width": 448.0,
+          "height": 22.0,
+          "background_color": null,
+          "border": null,
+          "text": {
+            "lines": [
+              {
+                "text": "The platform must meet the following security standards:",
+                "x_offset": 0.0,
+                "y_offset": 0.0
+              }
+            ],
+            "font_family": "Helvetica",
+            "font_size": 16.0,
+            "bold": false,
+            "italic": false,
+            "color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "line_height": 22.4,
+            "text_align": "left",
+            "underline": false,
+            "list_marker": null
+          },
+          "image": null,
+          "children": []
+        },
+        {
+          "x": 64.0,
+          "y": 488.0,
+          "width": 467.0,
+          "height": 159.0,
+          "background_color": null,
+          "border": null,
+          "text": null,
+          "image": null,
+          "children": [
+            {
+              "x": 88.0,
+              "y": 488.0,
+              "width": 443.0,
+              "height": 23.0,
+              "background_color": null,
+              "border": null,
+              "text": {
+                "lines": [],
+                "font_family": "Helvetica",
+                "font_size": 16.0,
+                "bold": false,
+                "italic": false,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "line_height": 22.4,
+                "text_align": "left",
+                "underline": false,
+                "list_marker": "1. "
+              },
+              "image": null,
+              "children": [
+                {
+                  "x": 88.0,
+                  "y": 488.0,
+                  "width": 384.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "All data at rest must be encrypted using AES-256",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 88.0,
+              "y": 514.0,
+              "width": 443.0,
+              "height": 22.0,
+              "background_color": null,
+              "border": null,
+              "text": {
+                "lines": [],
+                "font_family": "Helvetica",
+                "font_size": 16.0,
+                "bold": false,
+                "italic": false,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "line_height": 22.4,
+                "text_align": "left",
+                "underline": false,
+                "list_marker": "2. "
+              },
+              "image": null,
+              "children": [
+                {
+                  "x": 88.0,
+                  "y": 514.0,
+                  "width": 288.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "All data in transit must use TLS 1.3",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 88.0,
+              "y": 541.0,
+              "width": 443.0,
+              "height": 23.0,
+              "background_color": null,
+              "border": null,
+              "text": {
+                "lines": [],
+                "font_family": "Helvetica",
+                "font_size": 16.0,
+                "bold": false,
+                "italic": false,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "line_height": 22.4,
+                "text_align": "left",
+                "underline": false,
+                "list_marker": "3. "
+              },
+              "image": null,
+              "children": [
+                {
+                  "x": 88.0,
+                  "y": 541.0,
+                  "width": 304.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Authentication via OAuth 2.0 with PKCE",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 88.0,
+              "y": 567.0,
+              "width": 443.0,
+              "height": 22.0,
+              "background_color": null,
+              "border": null,
+              "text": {
+                "lines": [],
+                "font_family": "Helvetica",
+                "font_size": 16.0,
+                "bold": false,
+                "italic": false,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "line_height": 22.4,
+                "text_align": "left",
+                "underline": false,
+                "list_marker": "4. "
+              },
+              "image": null,
+              "children": [
+                {
+                  "x": 88.0,
+                  "y": 567.0,
+                  "width": 400.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Role-based access control (RBAC) for all endpoints",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 88.0,
+              "y": 594.0,
+              "width": 443.0,
+              "height": 22.0,
+              "background_color": null,
+              "border": null,
+              "text": {
+                "lines": [],
+                "font_family": "Helvetica",
+                "font_size": 16.0,
+                "bold": false,
+                "italic": false,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "line_height": 22.4,
+                "text_align": "left",
+                "underline": false,
+                "list_marker": "5. "
+              },
+              "image": null,
+              "children": [
+                {
+                  "x": 88.0,
+                  "y": 594.0,
+                  "width": 296.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Audit logging for all state mutations",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 88.0,
+              "y": 620.0,
+              "width": 443.0,
+              "height": 23.0,
+              "background_color": null,
+              "border": null,
+              "text": {
+                "lines": [],
+                "font_family": "Helvetica",
+                "font_size": 16.0,
+                "bold": false,
+                "italic": false,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "line_height": 22.4,
+                "text_align": "left",
+                "underline": false,
+                "list_marker": "6. "
+              },
+              "image": null,
+              "children": [
+                {
+                  "x": 88.0,
+                  "y": 620.0,
+                  "width": 304.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Rate limiting at the API gateway level",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "x": 64.0,
+          "y": 677.0,
+          "width": 172.0,
+          "height": 33.0,
+          "background_color": null,
+          "border": null,
+          "text": {
+            "lines": [
+              {
+                "text": "5. Deployment",
+                "x_offset": 0.0,
+                "y_offset": 0.0
+              }
+            ],
+            "font_family": "Helvetica",
+            "font_size": 24.0,
+            "bold": true,
+            "italic": false,
+            "color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "line_height": 33.6,
+            "text_align": "left",
+            "underline": false,
+            "list_marker": null
+          },
+          "image": null,
+          "children": []
+        },
+        {
+          "x": 64.0,
+          "y": 718.0,
+          "width": 400.0,
+          "height": 45.0,
+          "background_color": null,
+          "border": null,
+          "text": {
+            "lines": [
+              {
+                "text": "The system will be deployed on Kubernetes with the",
+                "x_offset": 0.0,
+                "y_offset": 0.0
+              },
+              {
+                "text": "following resource allocations:",
+                "x_offset": 0.0,
+                "y_offset": 22.4
+              }
+            ],
+            "font_family": "Helvetica",
+            "font_size": 16.0,
+            "bold": false,
+            "italic": false,
+            "color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "line_height": 22.4,
+            "text_align": "left",
+            "underline": false,
+            "list_marker": null
+          },
+          "image": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "boxes": [
+        {
+          "x": 64.0,
+          "y": 40.0,
+          "width": 467.0,
+          "height": 41.0,
+          "background_color": null,
+          "border": null,
+          "text": null,
+          "image": null,
+          "children": [
+            {
+              "x": 64.0,
+              "y": 40.0,
+              "width": 117.0,
+              "height": 41.0,
+              "background_color": [
+                0.898,
+                0.906,
+                0.922,
+                1.0
+              ],
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 73.0,
+                  "y": 49.0,
+                  "width": 56.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Service",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 181.0,
+              "y": 40.0,
+              "width": 117.0,
+              "height": 41.0,
+              "background_color": [
+                0.898,
+                0.906,
+                0.922,
+                1.0
+              ],
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 190.0,
+                  "y": 49.0,
+                  "width": 24.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "CPU",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 298.0,
+              "y": 40.0,
+              "width": 116.0,
+              "height": 41.0,
+              "background_color": [
+                0.898,
+                0.906,
+                0.922,
+                1.0
+              ],
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 307.0,
+                  "y": 49.0,
+                  "width": 48.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Memory",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 414.0,
+              "y": 40.0,
+              "width": 117.0,
+              "height": 41.0,
+              "background_color": [
+                0.898,
+                0.906,
+                0.922,
+                1.0
+              ],
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 423.0,
+                  "y": 49.0,
+                  "width": 64.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Replicas",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "x": 64.0,
+          "y": 80.0,
+          "width": 467.0,
+          "height": 40.0,
+          "background_color": null,
+          "border": null,
+          "text": null,
+          "image": null,
+          "children": [
+            {
+              "x": 64.0,
+              "y": 80.0,
+              "width": 117.0,
+              "height": 40.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 73.0,
+                  "y": 89.0,
+                  "width": 88.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "API Gateway",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 181.0,
+              "y": 80.0,
+              "width": 117.0,
+              "height": 40.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 190.0,
+                  "y": 89.0,
+                  "width": 56.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "2 cores",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 298.0,
+              "y": 80.0,
+              "width": 116.0,
+              "height": 40.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 307.0,
+                  "y": 89.0,
+                  "width": 32.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "4 GB",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 414.0,
+              "y": 80.0,
+              "width": 117.0,
+              "height": 40.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 423.0,
+                  "y": 89.0,
+                  "width": 8.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "3",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "x": 64.0,
+          "y": 121.0,
+          "width": 467.0,
+          "height": 40.0,
+          "background_color": null,
+          "border": null,
+          "text": null,
+          "image": null,
+          "children": [
+            {
+              "x": 64.0,
+              "y": 121.0,
+              "width": 117.0,
+              "height": 40.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 73.0,
+                  "y": 130.0,
+                  "width": 96.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "User Service",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 181.0,
+              "y": 121.0,
+              "width": 117.0,
+              "height": 40.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 190.0,
+                  "y": 130.0,
+                  "width": 48.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "1 core",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 298.0,
+              "y": 121.0,
+              "width": 116.0,
+              "height": 40.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 307.0,
+                  "y": 130.0,
+                  "width": 32.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "2 GB",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 414.0,
+              "y": 121.0,
+              "width": 117.0,
+              "height": 40.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 423.0,
+                  "y": 130.0,
+                  "width": 8.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "2",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "x": 64.0,
+          "y": 161.0,
+          "width": 467.0,
+          "height": 63.0,
+          "background_color": null,
+          "border": null,
+          "text": null,
+          "image": null,
+          "children": [
+            {
+              "x": 64.0,
+              "y": 161.0,
+              "width": 117.0,
+              "height": 63.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 73.0,
+                  "y": 170.0,
+                  "width": 56.0,
+                  "height": 45.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Order",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      },
+                      {
+                        "text": "Service",
+                        "x_offset": 0.0,
+                        "y_offset": 22.4
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 181.0,
+              "y": 161.0,
+              "width": 117.0,
+              "height": 63.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 190.0,
+                  "y": 170.0,
+                  "width": 56.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "2 cores",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 298.0,
+              "y": 161.0,
+              "width": 116.0,
+              "height": 63.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 307.0,
+                  "y": 170.0,
+                  "width": 32.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "4 GB",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 414.0,
+              "y": 161.0,
+              "width": 117.0,
+              "height": 63.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 423.0,
+                  "y": 170.0,
+                  "width": 8.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "3",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "x": 64.0,
+          "y": 224.0,
+          "width": 467.0,
+          "height": 63.0,
+          "background_color": null,
+          "border": null,
+          "text": null,
+          "image": null,
+          "children": [
+            {
+              "x": 64.0,
+              "y": 224.0,
+              "width": 117.0,
+              "height": 63.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 73.0,
+                  "y": 233.0,
+                  "width": 96.0,
+                  "height": 45.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Notification",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      },
+                      {
+                        "text": "Service",
+                        "x_offset": 0.0,
+                        "y_offset": 22.4
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 181.0,
+              "y": 224.0,
+              "width": 117.0,
+              "height": 63.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 190.0,
+                  "y": 233.0,
+                  "width": 72.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "0.5 cores",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 298.0,
+              "y": 224.0,
+              "width": 116.0,
+              "height": 63.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 307.0,
+                  "y": 233.0,
+                  "width": 32.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "1 GB",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 414.0,
+              "y": 224.0,
+              "width": 117.0,
+              "height": 63.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 423.0,
+                  "y": 233.0,
+                  "width": 8.0,
+                  "height": 23.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "2",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "x": 64.0,
+          "y": 287.0,
+          "width": 467.0,
+          "height": 63.0,
+          "background_color": null,
+          "border": null,
+          "text": null,
+          "image": null,
+          "children": [
+            {
+              "x": 64.0,
+              "y": 287.0,
+              "width": 117.0,
+              "height": 63.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 73.0,
+                  "y": 296.0,
+                  "width": 72.0,
+                  "height": 45.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "Analytics",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      },
+                      {
+                        "text": "Service",
+                        "x_offset": 0.0,
+                        "y_offset": 22.4
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 181.0,
+              "y": 287.0,
+              "width": 117.0,
+              "height": 63.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 190.0,
+                  "y": 296.0,
+                  "width": 56.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "4 cores",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 298.0,
+              "y": 287.0,
+              "width": 116.0,
+              "height": 63.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 307.0,
+                  "y": 296.0,
+                  "width": 32.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "8 GB",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "x": 414.0,
+              "y": 287.0,
+              "width": 117.0,
+              "height": 63.0,
+              "background_color": null,
+              "border": {
+                "width": 1.0,
+                "color": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              },
+              "text": null,
+              "image": null,
+              "children": [
+                {
+                  "x": 423.0,
+                  "y": 296.0,
+                  "width": 8.0,
+                  "height": 22.0,
+                  "background_color": null,
+                  "border": null,
+                  "text": {
+                    "lines": [
+                      {
+                        "text": "2",
+                        "x_offset": 0.0,
+                        "y_offset": 0.0
+                      }
+                    ],
+                    "font_family": "Helvetica",
+                    "font_size": 16.0,
+                    "bold": false,
+                    "italic": false,
+                    "color": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      1.0
+                    ],
+                    "line_height": 22.4,
+                    "text_align": "left",
+                    "underline": false,
+                    "list_marker": null
+                  },
+                  "image": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "x": 64.0,
+          "y": 380.0,
+          "width": 409.0,
+          "height": 33.0,
+          "background_color": null,
+          "border": null,
+          "text": {
+            "lines": [
+              {
+                "text": "6. Monitoring and Observability",
+                "x_offset": 0.0,
+                "y_offset": 0.0
+              }
+            ],
+            "font_family": "Helvetica",
+            "font_size": 24.0,
+            "bold": true,
+            "italic": false,
+            "color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "line_height": 33.6,
+            "text_align": "left",
+            "underline": false,
+            "list_marker": null
+          },
+          "image": null,
+          "children": []
+        },
+        {
+          "x": 64.0,
+          "y": 421.0,
+          "width": 424.0,
+          "height": 90.0,
+          "background_color": null,
+          "border": null,
+          "text": {
+            "lines": [
+              {
+                "text": "All services emit structured logs, metrics, and",
+                "x_offset": 0.0,
+                "y_offset": 0.0
+              },
+              {
+                "text": "distributed traces. A centralized observability stack",
+                "x_offset": 0.0,
+                "y_offset": 22.4
+              },
+              {
+                "text": "(Prometheus, Grafana, Jaeger) provides dashboards,",
+                "x_offset": 0.0,
+                "y_offset": 44.8
+              },
+              {
+                "text": "alerting, and end-to-end trace correlation.",
+                "x_offset": 0.0,
+                "y_offset": 67.2
+              }
+            ],
+            "font_family": "Helvetica",
+            "font_size": 16.0,
+            "bold": false,
+            "italic": false,
+            "color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "line_height": 22.4,
+            "text_align": "left",
+            "underline": false,
+            "list_marker": null
+          },
+          "image": null,
+          "children": []
+        },
+        {
+          "x": 64.0,
+          "y": 541.0,
+          "width": 172.0,
+          "height": 34.0,
+          "background_color": null,
+          "border": null,
+          "text": {
+            "lines": [
+              {
+                "text": "7. Conclusion",
+                "x_offset": 0.0,
+                "y_offset": 0.0
+              }
+            ],
+            "font_family": "Helvetica",
+            "font_size": 24.0,
+            "bold": true,
+            "italic": false,
+            "color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "line_height": 33.6,
+            "text_align": "left",
+            "underline": false,
+            "list_marker": null
+          },
+          "image": null,
+          "children": []
+        },
+        {
+          "x": 64.0,
+          "y": 583.0,
+          "width": 440.0,
+          "height": 67.0,
+          "background_color": null,
+          "border": null,
+          "text": {
+            "lines": [
+              {
+                "text": "This specification provides the foundation for the next",
+                "x_offset": 0.0,
+                "y_offset": 0.0
+              },
+              {
+                "text": "generation of our platform. All teams should review and",
+                "x_offset": 0.0,
+                "y_offset": 22.4
+              },
+              {
+                "text": "provide feedback by end of Q1 2026.",
+                "x_offset": 0.0,
+                "y_offset": 44.8
+              }
+            ],
+            "font_family": "Helvetica",
+            "font_size": 16.0,
+            "bold": false,
+            "italic": false,
+            "color": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "line_height": 22.4,
+            "text_align": "left",
+            "underline": false,
+            "list_marker": null
+          },
+          "image": null,
+          "children": []
+        },
+        {
+          "x": 64.0,
+          "y": 666.0,
+          "width": 294.0,
+          "height": 17.0,
+          "background_color": null,
+          "border": null,
+          "text": {
+            "lines": [
+              {
+                "text": "Document version 1.0 — Last updated February 2026",
+                "x_offset": 0.0,
+                "y_offset": 0.0
+              }
+            ],
+            "font_family": "Helvetica",
+            "font_size": 12.0,
+            "bold": false,
+            "italic": false,
+            "color": [
+              0.424,
+              0.447,
+              0.502,
+              1.0
+            ],
+            "line_height": 16.8,
+            "text_align": "left",
+            "underline": false,
+            "list_marker": null
+          },
+          "image": null,
+          "children": []
+        }
+      ]
+    }
+  ]
+}

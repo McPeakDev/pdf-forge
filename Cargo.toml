@@ -1,0 +1,57 @@
+[package]
+name = "pdf-forge"
+version = "0.1.0"
+edition = "2021"
+description = "Template-driven HTML to PDF pipeline with cross-language bindings"
+license = "MIT"
+
+[lib]
+name = "pdf_forge"
+crate-type = ["lib", "cdylib", "staticlib"]
+
+[[bin]]
+name = "forge"
+path = "src/main.rs"
+
+[dependencies]
+# Layout engine (flexbox + grid)
+taffy = "0.7"
+
+# Font parsing & text measurement
+ttf-parser = "0.25"
+
+# Optional text shaping
+rustybuzz = "0.20"
+
+# PDF generation
+printpdf = { version = "0.8", features = ["png", "jpeg"] }
+
+# HTML parsing
+markup5ever = "0.14"
+html5ever = "0.29"
+
+# For stable string interning used by html5ever
+string_cache = "0.8"
+
+# Serialisation for layout configs
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# Logging
+log = "0.4"
+env_logger = "0.11"
+
+# Base64 decoding for data-URI images
+base64 = "0.22"
+
+# Image decoding (pixel dimensions for embedded images)
+image = { version = "0.25", default-features = false, features = ["png", "jpeg"] }
+
+[dev-dependencies]
+# For golden-file tests
+sha2 = "0.10"
+
+
+[build-dependencies]
+# Auto-generate include/rpdf.h from the Rust FFI source on every build.
+cbindgen = "0.27"

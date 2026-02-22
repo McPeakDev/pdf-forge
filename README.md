@@ -112,6 +112,7 @@ The public header is at **`include/rpdf.h`** (auto-generated; do not edit manual
 #include "rpdf.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 int main(void) {
     const char *html = "<h1>Hello, PDF!</h1>";
@@ -130,6 +131,51 @@ int main(void) {
     rpdf_free_buffer(buf, len);
     return 0;
 }
+```
+
+### C example with custom config
+
+Use `rpdf_generate_pdf_ex` to set a title, page size, margin, or landscape orientation:
+
+```c
+#include "rpdf.h"
+#include <stdio.h>
+#include <string.h>
+
+int main(void) {
+    const char *html = "<h1>Quarterly Report</h1>";
+
+    RpdfPipelineConfig cfg = {
+        .title       = "Q4 Report",    /* NULL → default ("rpdf output") */
+        .page_width  = 0.0f,           /* 0 → default (A4 = 595.28 pt)   */
+        .page_height = 0.0f,           /* 0 → default (A4 = 841.89 pt)   */
+        .page_margin = 50.0f,          /* custom margin                    */
+        .orientation = Landscape,      /* or Portrait (default)            */
+    };
+
+    uint8_t *buf = NULL;
+    uint32_t len = 0;
+
+    if (rpdf_generate_pdf_ex(
+            (const uint8_t *)html, (uint32_t)strlen(html),
+            &cfg, &buf, &len) != 0) {
+        fprintf(stderr, "error: %s\n", rpdf_last_error());
+        return 1;
+    }
+
+    FILE *f = fopen("report.pdf", "wb");
+    fwrite(buf, 1, len, f);
+    fclose(f);
+
+    rpdf_free_buffer(buf, len);
+    return 0;
+}
+```
+
+Pass `NULL` as the `cfg` pointer to any `_ex` function to use all defaults:
+
+```c
+rpdf_generate_pdf_ex(html_ptr, html_len, NULL, &buf, &len);
 ```
 
 Link flags:
@@ -165,16 +211,28 @@ import "C"
 
 ## API overview
 
-| Function                        | Description                                             |
-| ------------------------------- | ------------------------------------------------------- |
-| `rpdf_generate_pdf`             | HTML → PDF bytes                                        |
-| `rpdf_generate_pdf_with_layout` | HTML → PDF bytes + layout JSON                          |
-| `rpdf_compute_layout`           | HTML → layout JSON only (no rendering)                  |
-| `rpdf_render_from_layout`       | layout JSON → PDF bytes                                 |
-| `rpdf_free_buffer`              | Free a PDF byte buffer                                  |
-| `rpdf_free_string`              | Free a JSON string                                      |
-| `rpdf_last_error`               | Retrieve last error message (thread-local, do not free) |
-| `rpdf_version`                  | Library version string (do not free)                    |
+### Types
+
+| Type                   | Description                                                                         |
+| ---------------------- | ----------------------------------------------------------------------------------- |
+| `RpdfPageOrientation`  | Enum: `Portrait = 0` (default), `Landscape = 1`                                     |
+| `RpdfPipelineConfig`   | Struct: `title`, `page_width`, `page_height`, `page_margin`, `orientation`. Zero/NULL fields fall back to A4 defaults. |
+
+### Functions
+
+| Function                             | Description                                                   |
+| ------------------------------------ | ------------------------------------------------------------- |
+| `rpdf_generate_pdf`                  | HTML → PDF bytes (default config)                             |
+| `rpdf_generate_pdf_ex`               | HTML → PDF bytes with custom `RpdfPipelineConfig`             |
+| `rpdf_generate_pdf_with_layout`      | HTML → PDF bytes + layout JSON (default config)               |
+| `rpdf_generate_pdf_with_layout_ex`   | HTML → PDF bytes + layout JSON with custom `RpdfPipelineConfig` |
+| `rpdf_compute_layout`                | HTML → layout JSON only (default config)                      |
+| `rpdf_compute_layout_ex`             | HTML → layout JSON only with custom `RpdfPipelineConfig`      |
+| `rpdf_render_from_layout`            | layout JSON → PDF bytes                                       |
+| `rpdf_free_buffer`                   | Free a PDF byte buffer                                        |
+| `rpdf_free_string`                   | Free a JSON string                                            |
+| `rpdf_last_error`                    | Last error message (thread-local, do **not** free)            |
+| `rpdf_version`                       | Library version string (do **not** free)                      |
 
 **Return codes:** `0` success · `1` null pointer · `2` invalid UTF-8 · `3` pipeline error · `4` render error
 

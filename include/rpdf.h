@@ -36,6 +36,53 @@
  */
 #define PAGE_MARGIN_PT 40.0
 
+/**
+ * Page orientation for use in [`RpdfPipelineConfig`].
+ */
+typedef enum RpdfPageOrientation {
+  /**
+   * Portrait mode: height > width (default).
+   */
+  Portrait = 0,
+  /**
+   * Landscape mode: width > height.
+   */
+  Landscape = 1,
+} RpdfPageOrientation;
+
+/**
+ * Optional configuration for PDF generation passed to the `*_ex` functions.
+ *
+ * Fields set to `0` (or `NULL` for `title`) fall back to their A4 defaults:
+ * - `page_width`  → 595.28 pt
+ * - `page_height` → 841.89 pt
+ * - `page_margin` → 40 pt
+ * - `title`       → "rpdf output"
+ */
+typedef struct RpdfPipelineConfig {
+  /**
+   * Null-terminated UTF-8 document title embedded in PDF metadata.
+   * Pass `NULL` to use the default title ("rpdf output").
+   */
+  const char *title;
+  /**
+   * Page width in points. Pass `0.0` to use the default (A4 = 595.28).
+   */
+  float page_width;
+  /**
+   * Page height in points. Pass `0.0` to use the default (A4 = 841.89).
+   */
+  float page_height;
+  /**
+   * Page margin in points. Pass `0.0` to use the default (40 pt).
+   */
+  float page_margin;
+  /**
+   * Page orientation (portrait = 0, landscape = 1).
+   */
+  enum RpdfPageOrientation orientation;
+} RpdfPipelineConfig;
+
 
 
 
@@ -96,6 +143,71 @@ int rpdf_generate_pdf_with_layout(const uint8_t *html_ptr,
  * `0` on success.
  */
 int rpdf_compute_layout(const uint8_t *html_ptr, uint32_t html_len, char **out_json_ptr);
+
+/**
+ * Generate a PDF from HTML with a custom [`RpdfPipelineConfig`].
+ *
+ * # Parameters
+ * - `html_ptr`, `html_len`: UTF-8 HTML input
+ * - `cfg`: optional pointer to an [`RpdfPipelineConfig`]; pass `NULL` for defaults
+ * - `out_buf`, `out_len`: PDF output
+ *
+ * # Returns
+ * `0` on success.
+ *
+ * # Safety
+ * - `html_ptr` must point to `html_len` valid bytes.
+ * - `cfg`, if non-null, must be a valid pointer to a fully-initialised
+ *   [`RpdfPipelineConfig`] whose `title` field (if non-null) is a valid
+ *   null-terminated UTF-8 string.
+ * - The caller must free `*out_buf` with `rpdf_free_buffer`.
+ */
+int rpdf_generate_pdf_ex(const uint8_t *html_ptr,
+                         uint32_t html_len,
+                         const struct RpdfPipelineConfig *cfg,
+                         uint8_t **out_buf,
+                         uint32_t *out_len);
+
+/**
+ * Generate a PDF and layout JSON from HTML with a custom [`RpdfPipelineConfig`].
+ *
+ * # Parameters
+ * - `html_ptr`, `html_len`: UTF-8 HTML input
+ * - `cfg`: optional pointer to an [`RpdfPipelineConfig`]; pass `NULL` for defaults
+ * - `out_pdf_buf`, `out_pdf_len`: PDF output (free with `rpdf_free_buffer`)
+ * - `out_json_ptr`: layout JSON output (free with `rpdf_free_string`)
+ *
+ * # Returns
+ * `0` on success.
+ *
+ * # Safety
+ * Same as `rpdf_generate_pdf_ex`.
+ */
+int rpdf_generate_pdf_with_layout_ex(const uint8_t *html_ptr,
+                                     uint32_t html_len,
+                                     const struct RpdfPipelineConfig *cfg,
+                                     uint8_t **out_pdf_buf,
+                                     uint32_t *out_pdf_len,
+                                     char **out_json_ptr);
+
+/**
+ * Compute only the layout config JSON from HTML with a custom [`RpdfPipelineConfig`].
+ *
+ * # Parameters
+ * - `html_ptr`, `html_len`: UTF-8 HTML input
+ * - `cfg`: optional pointer to an [`RpdfPipelineConfig`]; pass `NULL` for defaults
+ * - `out_json_ptr`: layout JSON output (free with `rpdf_free_string`)
+ *
+ * # Returns
+ * `0` on success.
+ *
+ * # Safety
+ * Same as `rpdf_generate_pdf_ex`.
+ */
+int rpdf_compute_layout_ex(const uint8_t *html_ptr,
+                           uint32_t html_len,
+                           const struct RpdfPipelineConfig *cfg,
+                           char **out_json_ptr);
 
 /**
  * Render a PDF from a layout config JSON string.

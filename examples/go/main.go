@@ -16,9 +16,9 @@
 //	go build -o generate_pdf.exe .
 //	generate_pdf.exe ..\..\templates\minimal.html out.pdf
 //
-// Optional --title flag:
+// Optional flags:
 //
-//	./generate_pdf --title "Q4 Report" input.html output.pdf
+//	./generate_pdf --title "Q4 Report" --landscape input.html output.pdf
 
 package main
 
@@ -36,12 +36,30 @@ import (
 	"unsafe"
 )
 
-// GeneratePDF converts HTML bytes into a PDF byte slice.
-// title is embedded in the PDF document metadata.
-func GeneratePDF(html []byte) ([]byte, error) {
+// GeneratePDF converts HTML bytes into a PDF byte slice using the given config.
+// title is embedded in the PDF document metadata; pass "" for the default.
+// landscape rotates the effective page to A4 landscape when true.
+func GeneratePDF(html []byte, title string, landscape bool) ([]byte, error) {
 	if len(html) == 0 {
 		return nil, errors.New("html must not be empty")
 	}
+
+	// Build the C config struct.
+	var cfg C.RpdfPipelineConfig
+
+	// Title string: allocate a C string for the duration of the call.
+	if title != "" {
+		cTitle := C.CString(title)
+		defer C.free(unsafe.Pointer(cTitle))
+		cfg.title = cTitle
+	} // nil → library uses default ("rpdf output")
+
+	if landscape {
+		cfg.orientation = C.Landscape
+	} else {
+		cfg.orientation = C.Portrait
+	}
+	// page_width, page_height, page_margin left at 0 → A4 defaults
 
 	htmlPtr := (*C.uint8_t)(unsafe.Pointer(&html[0]))
 	htmlLen := C.uint32_t(len(html))
@@ -49,13 +67,13 @@ func GeneratePDF(html []byte) ([]byte, error) {
 	var outBuf *C.uint8_t
 	var outLen C.uint32_t
 
-	rc := C.rpdf_generate_pdf(htmlPtr, htmlLen, &outBuf, &outLen)
+	rc := C.rpdf_generate_pdf_ex(htmlPtr, htmlLen, &cfg, &outBuf, &outLen)
 	if rc != 0 {
 		errPtr := C.rpdf_last_error()
 		if errPtr != nil {
 			return nil, fmt.Errorf("rpdf error (code %d): %s", int(rc), C.GoString(errPtr))
 		}
-		return nil, fmt.Errorf("rpdf_generate_pdf failed with code %d", int(rc))
+		return nil, fmt.Errorf("rpdf_generate_pdf_ex failed with code %d", int(rc))
 	}
 	defer C.rpdf_free_buffer(outBuf, outLen)
 
@@ -72,11 +90,12 @@ func main() {
 	// ── Parse args ───────────────────────────────────────────────────────────
 	args := os.Args[1:]
 	if len(args) < 2 {
-		fmt.Fprintln(os.Stderr, "Usage: generate_pdf [--title <title>] <input.html> <output.pdf>")
+		fmt.Fprintln(os.Stderr, "Usage: generate_pdf [--title <title>] [--landscape] <input.html> <output.pdf>")
 		os.Exit(1)
 	}
 
 	title := ""
+	landscape := false
 	var inputPath, outputPath string
 
 	positional := 0
@@ -89,6 +108,8 @@ func main() {
 			}
 			i++
 			title = args[i]
+		case "--landscape", "-l":
+			landscape = true
 		default:
 			switch positional {
 			case 0:
@@ -104,11 +125,9 @@ func main() {
 	}
 
 	if inputPath == "" || outputPath == "" {
-		fmt.Fprintln(os.Stderr, "Usage: generate_pdf [--title <title>] <input.html> <output.pdf>")
+		fmt.Fprintln(os.Stderr, "Usage: generate_pdf [--title <title>] [--landscape] <input.html> <output.pdf>")
 		os.Exit(1)
 	}
-
-	_ = title // title is available for future use or to prepend to the HTML <title> tag
 
 	fmt.Printf("pdf_forge %s\n", Version())
 
@@ -120,7 +139,7 @@ func main() {
 	}
 
 	// ── Generate PDF ─────────────────────────────────────────────────────────
-	pdf, err := GeneratePDF(html)
+	pdf, err := GeneratePDF(html, title, landscape)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "PDF generation failed: %v\n", err)
 		os.Exit(1)

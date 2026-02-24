@@ -273,12 +273,27 @@ impl<'a> LayoutBuilder<'a> {
             child_nodes.push(child_id);
         }
 
-        let taffy_style = self.computed_to_taffy(style, tag);
+        // For <img> elements, resolve Auto width/height to concrete pixel dimensions
+        // using the image's intrinsic size decoded from the base64 data URI.
+        // Without this, a Taffy flex container with no children and Auto dimensions
+        // computes to 0×0, making the image invisible in the rendered PDF.
+        let style_override: Option<crate::style::ComputedStyle> = if *tag == crate::dom::Tag::Img
+            && (matches!(style.width, crate::style::Dimension::Auto)
+                || matches!(style.height, crate::style::Dimension::Auto))
+        {
+            let src = attrs.get("src").map(|s| s.as_str()).unwrap_or("");
+            resolve_img_auto_dimensions(src, style, parent_width)
+        } else {
+            None
+        };
+
+        let effective_style = style_override.as_ref().unwrap_or(style);
+        let taffy_style = self.computed_to_taffy(effective_style, tag);
         let node = self
             .taffy
             .new_with_children(taffy_style, &child_nodes)
             .unwrap();
-        self.node_styles.insert(node, style.clone());
+        self.node_styles.insert(node, effective_style.clone());
 
         // Handle images
         if *tag == crate::dom::Tag::Img {
@@ -507,6 +522,63 @@ impl<'a> LayoutBuilder<'a> {
             children,
         }
     }
+}
+
+// ---------------------------------------------------------------------------
+// Image intrinsic-size helper
+// ---------------------------------------------------------------------------
+
+/// Attempt to decode a base64 data-URI image and return a cloned
+/// [`ComputedStyle`] with any `Auto` width/height replaced by concrete pixel
+/// values derived from the image's intrinsic dimensions.
+///
+/// Returns `None` when the src is not a parseable base64 data URI, when image
+/// decoding fails, or when both dimensions are already specified (no fix needed).
+fn resolve_img_auto_dimensions(
+    src: &str,
+    style: &crate::style::ComputedStyle,
+    parent_width: f32,
+) -> Option<crate::style::ComputedStyle> {
+    use base64::{engine::general_purpose::STANDARD as BASE64_STD, Engine as _};
+
+    if !src.starts_with("data:") || !src.contains(";base64,") {
+        return None;
+    }
+    let comma = src.find(',')?;
+    let b64 = src[comma + 1..].trim();
+    let bytes = BASE64_STD.decode(b64).ok()?;
+    let img = ::image::load_from_memory(&bytes).ok()?;
+    let (px_w, px_h) = (img.width() as f32, img.height() as f32);
+    if px_w == 0.0 || px_h == 0.0 {
+        return None;
+    }
+    let aspect = px_w / px_h;
+
+    let known_w: Option<f32> = match style.width {
+        crate::style::Dimension::Px(v) => Some(v),
+        crate::style::Dimension::Percent(p) => Some(parent_width * p / 100.0),
+        crate::style::Dimension::Auto => None,
+    };
+    let known_h: Option<f32> = match style.height {
+        crate::style::Dimension::Px(v) => Some(v),
+        _ => None,
+    };
+
+    let mut s = style.clone();
+    match (known_w, known_h) {
+        // Width known → derive height from aspect ratio.
+        (Some(w), None) => s.height = crate::style::Dimension::Px((w / aspect).max(1.0)),
+        // Height known → derive width from aspect ratio.
+        (None, Some(h)) => s.width = crate::style::Dimension::Px((h * aspect).max(1.0)),
+        // Both Auto → use intrinsic pixel dimensions at 1 px = 1 pt.
+        (None, None) => {
+            s.width = crate::style::Dimension::Px(px_w);
+            s.height = crate::style::Dimension::Px(px_h);
+        }
+        // Both already resolved — nothing to fix.
+        (Some(_), Some(_)) => return None,
+    }
+    Some(s)
 }
 
 // ---------------------------------------------------------------------------

@@ -409,34 +409,52 @@ fn render_box(
     // Image – embed from pre-registered XObject
     if let Some(img) = &lbox.image {
         if let Some(res) = images.get(&img.src) {
-            // PDF origin is bottom-left; our layout origin is top-left.
-            // translate_y = bottom edge of image in PDF coordinates.
-            let img_bottom_y = page_height - lbox.y - img.height;
-
-            // At dpi=72 printpdf renders 1 px = 1 pt, so
-            // scale = desired_pt / px_dim.
-            let scale_x = if res.px_width > 0 {
-                img.width / res.px_width as f32
+            let px_w = res.px_width as f32;
+            let px_h = res.px_height as f32;
+            if px_w <= 0.0 || px_h <= 0.0 {
+                log::warn!("Skipping image — zero intrinsic dimensions");
             } else {
-                1.0
-            };
-            let scale_y = if res.px_height > 0 {
-                img.height / res.px_height as f32
-            } else {
-                1.0
-            };
+                // Determine render dimensions. If the layout gave us a zero
+                // width or height (e.g. because no CSS size was specified and
+                // the intrinsic resolution fallback in layout.rs couldn't run
+                // for non-data-URI sources), fall back to the intrinsic pixel
+                // size at 72 dpi (1 px = 1 pt).
+                let asp = px_w / px_h;
+                let render_w = if img.width > 0.0 {
+                    img.width
+                } else if img.height > 0.0 {
+                    img.height * asp
+                } else {
+                    px_w // intrinsic fallback
+                };
+                let render_h = if img.height > 0.0 {
+                    img.height
+                } else if img.width > 0.0 {
+                    img.width / asp
+                } else {
+                    px_h // intrinsic fallback
+                };
 
-            ops.push(Op::UseXobject {
-                id: res.xobj_id.clone(),
-                transform: XObjectTransform {
-                    translate_x: Some(Pt(lbox.x)),
-                    translate_y: Some(Pt(img_bottom_y)),
-                    dpi: Some(72.0),
-                    scale_x: Some(scale_x),
-                    scale_y: Some(scale_y),
-                    rotate: None,
-                },
-            });
+                // PDF origin is bottom-left; our layout origin is top-left.
+                let img_bottom_y = page_height - lbox.y - render_h;
+
+                // At dpi=72 printpdf renders 1 px = 1 pt, so
+                // scale = desired_pt / px_dim.
+                let scale_x = render_w / px_w;
+                let scale_y = render_h / px_h;
+
+                ops.push(Op::UseXobject {
+                    id: res.xobj_id.clone(),
+                    transform: XObjectTransform {
+                        translate_x: Some(Pt(lbox.x)),
+                        translate_y: Some(Pt(img_bottom_y)),
+                        dpi: Some(72.0),
+                        scale_x: Some(scale_x),
+                        scale_y: Some(scale_y),
+                        rotate: None,
+                    },
+                });
+            }
         }
     }
 
